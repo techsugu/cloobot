@@ -1,0 +1,44 @@
+[
+    {
+        "jobId": 1,
+        "job_location": "chennai",
+        "job_title": "Full stack Developer",
+        "job_responsibilities": "Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms",
+        "job_requirement": "Degree in Computer Science. Strong organizational and project management skills. Proficiency with fundamental front end languages such as HTML, CSS and JavaScript. Familiarity with JavaScript frameworks such as Angular JS, React and Amber."
+    },
+    {
+        "jobId": 2,
+        "job_location": "chennai",
+        "job_title": "Full stack Developer",
+        "job_responsibilities": "Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms",
+        "job_requirement": "Degree in Computer Science. Strong organizational and project management skills. Proficiency with fundamental front end languages such as HTML, CSS and JavaScript. Familiarity with JavaScript frameworks such as Angular JS, React and Amber."
+    },
+    {
+        "jobId": 3,
+        "job_location": "chennai",
+        "job_title": "Full stack Developer",
+        "job_responsibilities": "Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms",
+        "job_requirement": "Degree in Computer Science. Strong organizational and project management skills. Proficiency with fundamental front end languages such as HTML, CSS and JavaScript. Familiarity with JavaScript frameworks such as Angular JS, React and Amber."
+    },
+    {
+        "jobId": 4,
+        "job_location": "chennai",
+        "job_title": "Full stack Developer",
+        "job_responsibilities": "Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms",
+        "job_requirement": "Degree in Computer Science. Strong organizational and project management skills. Proficiency with fundamental front end languages such as HTML, CSS and JavaScript. Familiarity with JavaScript frameworks such as Angular JS, React and Amber."
+    },
+    {
+        "jobId": 5,
+        "job_location": "chennai",
+        "job_title": "Full stack Developer",
+        "job_responsibilities": "Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms",
+        "job_requirement": "Degree in Computer Science. Strong organizational and project management skills. Proficiency with fundamental front end languages such as HTML, CSS and JavaScript. Familiarity with JavaScript frameworks such as Angular JS, React and Amber."
+    },
+    {
+        "jobId": 6,
+        "job_location": "chennai",
+        "job_title": "Full stack Developer",
+        "job_responsibilities": "Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms",
+        "job_requirement": "Degree in Computer Science. Strong organizational and project management skills. Proficiency with fundamental front end languages such as HTML, CSS and JavaScript. Familiarity with JavaScript frameworks such as Angular JS, React and Amber."
+    }
+]
