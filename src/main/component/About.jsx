@@ -6,6 +6,43 @@ import Contact from "./Contact";
 
 
 class Globalmap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.changeCircle = this.changeCircle.bind(this);
+    this.changeCircleNormal = this.changeCircleNormal.bind(this);
+  }
+    changeCircle(e) {
+      if(e.target.id === "Ellipse_636") {
+          e.currentTarget.setAttribute('cy', '180');
+          e.currentTarget.setAttribute('r', '160');
+      } else if (e.target.id === "Ellipse_638") {
+          e.currentTarget.setAttribute('cy', '150');
+          e.currentTarget.setAttribute('r', '180');
+      } else if(e.target.id === "Ellipse_640") {
+        e.currentTarget.setAttribute('cy', '150');
+        e.currentTarget.setAttribute('r', '150');
+      } else if(e.target.id === "Path_4680") {
+        e.currentTarget.setAttribute('cy', '100');
+        e.currentTarget.setAttribute('r', '100');
+      }
+    }
+
+    changeCircleNormal(e) {
+      if(e.target.id === "Ellipse_636") {
+        e.currentTarget.setAttribute('cy', '65');
+        e.currentTarget.setAttribute('r', '65');
+      } else if (e.target.id === "Ellipse_638") {
+          e.currentTarget.setAttribute('cy', '54.5');
+          e.currentTarget.setAttribute('r', '54.5');
+      } else if(e.target.id === "Ellipse_640") {
+        e.currentTarget.setAttribute('cy', '22');
+        e.currentTarget.setAttribute('r', '22');
+      } else if(e.target.id === "Path_4680") {
+        e.currentTarget.setAttribute('cy', '22');
+        e.currentTarget.setAttribute('r', '22');
+      }
+    }
+
     render() {
         return (
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1787 1053">
@@ -19,7 +56,7 @@ class Globalmap extends React.Component {
     <circle id="Ellipse_356" data-name="Ellipse 356" cx="22.5" cy="22.5" r="22.5" transform="translate(1581 2076)" fill="#194d99"/>
     <circle id="Ellipse_365" data-name="Ellipse 365" cx="7.5" cy="7.5" r="7.5" transform="translate(1625 2159)" fill="#194d99"/>
     <circle id="Ellipse_366" data-name="Ellipse 366" cx="49.5" cy="49.5" r="49.5" transform="translate(1506 2132)" fill="#194d99"/>
-    <circle id="Ellipse_404" data-name="Ellipse 404" cx="10" cy="10" r="10" transform="translate(1639 2801)" fill="#194d99"/>
+    <circle id="Ellipse_404" data-name="Ellipse 404" cx="40" cy="10" r="10" transform="translate(1639 2801)" fill="#194d99"/>
     <circle id="Ellipse_405" data-name="Ellipse 405" cx="30.5" cy="30.5" r="30.5" transform="translate(1610 2731)" fill="#194d99"/>
     <circle id="Ellipse_406" data-name="Ellipse 406" cx="26" cy="26" r="26" transform="translate(1589 2645)" fill="#194d99"/>
     <circle id="Ellipse_408" data-name="Ellipse 408" cx="51" cy="51" r="51" transform="translate(1470 2663)" fill="#194d99"/>
@@ -111,8 +148,8 @@ class Globalmap extends React.Component {
     <circle id="Ellipse_464" data-name="Ellipse 464" cx="14.5" cy="14.5" r="14.5" transform="translate(1062 2385)" fill="#194d99"/>
     <circle id="Ellipse_465" data-name="Ellipse 465" cx="40.5" cy="40.5" r="40.5" transform="translate(980 2318)" fill="#194d99"/>
     <circle id="Ellipse_466" data-name="Ellipse 466" cx="21.5" cy="21.5" r="21.5" transform="translate(1121 2263)" fill="#194d99"/>
-    <circle id="Ellipse_450" data-name="Ellipse 450" cx="10" cy="10" r="10" transform="translate(1103 2509)" fill="#194d99"/>
-    <circle id="Ellipse_451" data-name="Ellipse 451" cx="10" cy="10" r="10" transform="translate(1105 2443)" fill="#194d99"/>
+    <circle id="Ellipse_450" data-name="Ellipse 450" cx="40" cy="10" r="10" transform="translate(1103 2509)" fill="#194d99"/>
+    <circle id="Ellipse_451" data-name="Ellipse 451" cx="40" cy="10" r="10" transform="translate(1105 2443)" fill="#194d99"/>
     <circle id="Ellipse_452" data-name="Ellipse 452" cx="7" cy="7" r="7" transform="translate(971 2552)" fill="#194d99"/>
     <circle id="Ellipse_453" data-name="Ellipse 453" cx="7" cy="7" r="7" transform="translate(944 2475)" fill="#194d99"/>
     <circle id="Ellipse_421" data-name="Ellipse 421" cx="18" cy="18" r="18" transform="translate(1014 2098)" fill="#194d99"/>
@@ -217,9 +254,12 @@ class Globalmap extends React.Component {
     <circle id="Ellipse_375" data-name="Ellipse 375" cx="41.5" cy="41.5" r="41.5" transform="translate(1480 2025)" fill="#6dcdf7"/>
     <circle id="Ellipse_376" data-name="Ellipse 376" cx="25.5" cy="25.5" r="25.5" transform="translate(1425 1911)" fill="#6dcdf7"/>
     <circle id="Ellipse_377" data-name="Ellipse 377" cx="8.5" cy="8.5" r="8.5" transform="translate(1515 1980)" fill="#6dcdf7"/>
-    <circle id="Ellipse_364" data-name="Ellipse 364" cx="10" cy="10" r="10" transform="translate(1622 2215)" fill="#6dcdf7"/>
+    <circle id="Ellipse_364" data-name="Ellipse 364" cx="40" cy="10" r="10" transform="translate(1622 2215)" fill="#6dcdf7"/>
     <g id="Component_20_1" data-name="Component 20 – 1" transform="translate(358 2175)">
-      <circle id="Ellipse_636" data-name="Ellipse 636" cx="65" cy="65" r="65" fill="#fff"/>
+      <circle id="Ellipse_636" data-name="Ellipse 636" cx="65" cy="65" r="65" fill="#fff" 
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)} 
+        />
       <g id="Group_378" data-name="Group 378" transform="translate(-1226.338 -215.245)">
         <g id="Group_373" data-name="Group 373" transform="translate(1284.531 293.584)">
           <g id="Group_11" data-name="Group 11">
@@ -262,18 +302,23 @@ class Globalmap extends React.Component {
                 Cloobot TechLabs Americas
                 Cheyenne 30 N Gould St, STE 4000 Sheridan, Wyoming" 
                 transform="translate(31 29)" 
-                fill="#fff" 
+                fill="rgb(109, 205, 247)" 
                 fontSize="20" 
                 fontFamily="Lato-Bold, Lato" 
-                fontWeight="700">
-                Americas
-                Cloobot TechLabs Americas
-                Cheyenne 30 N Gould St, STE 4000 Sheridan, Wyoming
-        <tspan x="31.5" y="20"></tspan></text>
+                fontWeight="700" textAnchor="middle" y="115">
+                <tspan x="40">Americas</tspan>
+                <tspan x="40" dy="25">Cloobot TechLabs Americas</tspan>
+                <tspan x="40" dy="25">Cheyenne 30 N Gould St, </tspan>
+                <tspan x="40" dy="25">STE 4000 Sheridan,</tspan> 
+                <tspan x="40" dy="25">Wyoming</tspan>
+                <tspan x="31.5" y="20"></tspan></text>
     </g>
     <g id="Component_17_1" data-name="Component 17 – 1" transform="translate(1027 2133)">
       <g id="Group_382" data-name="Group 382" transform="translate(13 13)">
-        <circle id="Ellipse_638" data-name="Ellipse 638" cx="54.5" cy="54.5" r="54.5" transform="translate(-13 -13)" fill="#fff"/>
+        <circle id="Ellipse_638" data-name="Ellipse 638" cx="54.5" cy="54.5" r="54.5" transform="translate(-13 -13)" fill="#fff" 
+          onMouseOver={e =>this.changeCircle(e)}
+          onMouseOut={e =>this.changeCircleNormal(e)}
+        />
         <g id="Group_380" data-name="Group 380" transform="translate(9.707 23)">
           <g id="Group_373-2" data-name="Group 373" transform="translate(27.177 26.485)">
             <g id="Group_11-2" data-name="Group 11">
@@ -312,65 +357,97 @@ class Globalmap extends React.Component {
           </g>
         </g>
       </g>
-      <text id="_United_Kingdom_" data-name="United Kingdom Cloobot TechLabs UK Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX" 
+      <text id="_United_Kingdom_" 
+      data-name="United Kingdom Cloobot TechLabs UK Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX" 
       transform="translate(13 36)" 
-      fill="#003a8e" fontSize="12" 
-      fontFamily="Lato-Regular, Lato" letterSpacing="0.055em">United Kingdom
-Cloobot TechLabs UK
-Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX<tspan x="38.33" y="12"></tspan></text>
+      fill="#003a8e" 
+      fontSize="20" 
+      fontFamily="Lato-Regular, Lato" 
+      letterSpacing="0.055em" textAnchor="middle" y="60">
+      <tspan x="40" dy="25">United Kingdom</tspan>
+      <tspan x="40" dy="25">Cloobot TechLabs UK</tspan>
+      <tspan x="40" dy="25">Kemp House, </tspan>
+      <tspan x="40" dy="25">160 City Road, </tspan>
+      <tspan x="40" dy="25">London, </tspan>
+      <tspan x="40" dy="25">United Kingdom, </tspan>
+      <tspan x="40" dy="25">EC1V 2NX</tspan></text>
     </g>
+
     <g id="Component_18_1" data-name="Component 18 – 1" transform="translate(1272 2365)">
-      <path id="Path_4680" data-name="Path 4680" d="M23.5,0A23.5,23.5,0,1,1,0,23.5,23.5,23.5,0,0,1,23.5,0Z" fill="#fff"/>
-      <text id="_Asia_Cloobot_TechLabs_India_" data-name="
-Asia
-Cloobot TechLabs India
-" transform="translate(7 18)" fill="#fff" fontSize="14" fontFamily="Lato-Light, Lato" fontWeight="300"><tspan x="16.5" y="14"></tspan></text>
-      <g id="Group_482" data-name="Group 482" transform="translate(-1232.262 -236)">
-        <g id="Group_373-3" data-name="Group 373" transform="translate(1253.622 263.462)">
-          <g id="Group_11-3" data-name="Group 11">
-            <g id="Group_10-3" data-name="Group 10">
-              <path id="Path_4-3" data-name="Path 4" d="M498.349,38.081h0a.241.241,0,1,0-.259-.222A.241.241,0,0,0,498.35,38.081Z" transform="translate(-498.09 -37.599)" fill="#6dcdf7"/>
+      <circle id="Path_4680" data-name="Path 4680" cx="22" cy="22" r="22" fill="#fff"
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)}
+      />
+      <text id="_Asia_Cloobot_TechLabs_India_" data-name="Asia Cloobot TechLabs India"
+      transform="translate(12 13)" 
+      fill="#212121" 
+      fontSize="20" 
+      fontFamily="Lato-Regular, Lato" 
+      letterSpacing="0.055em"
+      textAnchor="middle" y="40">
+      <tspan x="12" dy="25">Asia</tspan>
+      <tspan x="12" dy="25">Cloobot TechLabs</tspan>
+      <tspan x="12" dy="25">India</tspan>
+      </text>
+      <g id="Group_481" data-name="Group 481" transform="translate(-1234.413 -236.5)">
+        <g id="Group_373-4" data-name="Group 373" transform="translate(1252.894 262.754)">
+          <g id="Group_11-4" data-name="Group 11">
+            <g id="Group_10-4" data-name="Group 10">
+              <path id="Path_4-4" data-name="Path 4" d="M498.334,38.054h0a.228.228,0,1,0-.244-.209A.228.228,0,0,0,498.335,38.054Z" transform="translate(-498.09 -37.599)" fill="#6dcdf7"/>
             </g>
           </g>
         </g>
-        <g id="Group_374-3" data-name="Group 374" transform="translate(1254.409 264.469)">
-          <g id="Group_14-3" data-name="Group 14">
-            <g id="Group_13-3" data-name="Group 13">
-              <path id="Path_5-3" data-name="Path 5" d="M499.967,40.3h0a.483.483,0,1,0-.519-.444A.483.483,0,0,0,499.969,40.3Z" transform="translate(-499.448 -39.335)" fill="#6dcdf7"/>
+        <g id="Group_374-4" data-name="Group 374" transform="translate(1253.637 263.703)">
+          <g id="Group_14-4" data-name="Group 14">
+            <g id="Group_13-4" data-name="Group 13">
+              <path id="Path_5-4" data-name="Path 5" d="M499.938,40.245h0a.456.456,0,1,0-.49-.419A.456.456,0,0,0,499.94,40.245Z" transform="translate(-499.448 -39.335)" fill="#6dcdf7"/>
             </g>
           </g>
         </g>
-        <g id="Group_375-3" data-name="Group 375" transform="translate(1255.833 265.597)">
-          <g id="Group_17-3" data-name="Group 17">
-            <g id="Group_16-3" data-name="Group 16">
-              <path id="Path_6-3" data-name="Path 6" d="M502.685,42.729h0a.724.724,0,1,0-.779-.665A.725.725,0,0,0,502.687,42.729Z" transform="translate(-501.906 -41.283)" fill="#6dcdf7"/>
+        <g id="Group_375-4" data-name="Group 375" transform="translate(1254.98 264.767)">
+          <g id="Group_17-4" data-name="Group 17">
+            <g id="Group_16-4" data-name="Group 16">
+              <path id="Path_6-4" data-name="Path 6" d="M502.641,42.647h0a.683.683,0,1,0-.734-.627A.684.684,0,0,0,502.643,42.647Z" transform="translate(-501.906 -41.283)" fill="#6dcdf7"/>
             </g>
           </g>
         </g>
-        <g id="Group_376-3" data-name="Group 376" transform="translate(1258.191 266.322)">
-          <g id="Group_20-3" data-name="Group 20">
-            <g id="Group_19-3" data-name="Group 19">
-              <path id="Path_7-3" data-name="Path 7" d="M507.013,44.461h0a.966.966,0,1,0-1.038-.887A.966.966,0,0,0,507.016,44.461Z" transform="translate(-505.975 -42.533)" fill="#6dcdf7"/>
+        <g id="Group_376-4" data-name="Group 376" transform="translate(1257.203 265.45)">
+          <g id="Group_20-4" data-name="Group 20">
+            <g id="Group_19-4" data-name="Group 19">
+              <path id="Path_7-4" data-name="Path 7" d="M506.954,44.352h0a.911.911,0,1,0-.979-.837A.911.911,0,0,0,506.956,44.352Z" transform="translate(-505.975 -42.533)" fill="#6dcdf7"/>
             </g>
           </g>
         </g>
-        <g id="Group_377-3" data-name="Group 377" transform="translate(1240.833 251)">
-          <g id="Group_8-3" data-name="Group 8">
-            <g id="Group_7-3" data-name="Group 7">
-              <path id="Path_3-3" data-name="Path 3" d="M505.872,24.744c0,.1,0,.209,0,.313l-.019.31-.01.155-.005.078-.009.076-.036.306c-.023.2-.06.417-.1.626a8.486,8.486,0,0,1-.886,2.384A9.018,9.018,0,0,1,503.3,31a9.49,9.49,0,0,1-1.974,1.529,8.576,8.576,0,0,1-1.131.551,8.763,8.763,0,0,1-1.206.384,8.162,8.162,0,0,1-1.242.2h-.017A1.287,1.287,0,0,1,497.5,31.1a6.043,6.043,0,0,0,.86-.162,6.625,6.625,0,0,0,3.026-1.81,6.3,6.3,0,0,0,1.658-3.066c.027-.141.052-.278.068-.435l.029-.227.007-.057,0-.057.008-.113.016-.226c0-.075,0-.15,0-.224s0-.15,0-.224l-.012-.223a6.57,6.57,0,0,0-.11-.871c-.014-.071-.034-.141-.05-.211s-.03-.142-.054-.21c-.044-.137-.08-.278-.136-.41a5.816,5.816,0,0,0-2.13-2.712,7.018,7.018,0,0,0-1.6-.841c-.141-.057-.287-.1-.431-.148l-.22-.061-.11-.03-.111-.025a6.362,6.362,0,0,0-.892-.148l-.223-.02-.222-.009c-.071,0-.157,0-.238,0s-.163,0-.244,0c-.323.009-.642.027-.953.063a8.078,8.078,0,0,0-.905.159,5.954,5.954,0,0,0-.847.278,5.454,5.454,0,0,0-.793.406c-.128.081-.255.163-.381.254-.064.043-.124.09-.184.137s-.121.092-.18.142-.119.1-.177.15l-.174.157c-.114.11-.229.217-.339.335s-.219.235-.327.356c-.054.061-.1.125-.158.187s-.105.125-.156.19a15.137,15.137,0,0,0-1.129,1.653c-.344.584-.656,1.19-.947,1.819-.152.332-.318.676-.494,1.011s-.365.666-.563.989-.408.637-.626.945c-.053.074-.114.16-.174.239s-.122.158-.185.235c-.125.154-.256.3-.389.448a7.732,7.732,0,0,1-1.87,1.5,6.011,6.011,0,0,1-.555.272,5.81,5.81,0,0,1-.59.214,4.8,4.8,0,0,1-1.252.2,5.169,5.169,0,0,1-1.234-.121,6.244,6.244,0,0,1-1.151-.369,6.464,6.464,0,0,1-1.978-1.328,5.61,5.61,0,0,1-1.312-2,5.548,5.548,0,0,1-.3-1.166,5.843,5.843,0,0,1-.045-1.194,5.66,5.66,0,0,1,.65-2.288,5.886,5.886,0,0,1,1.509-1.832c.079-.06.156-.123.238-.182s.162-.116.246-.169a5.8,5.8,0,0,1,.519-.3c.089-.044.178-.091.271-.129s.182-.082.277-.116l.141-.053.143-.046.143-.046.146-.039a5.294,5.294,0,0,1,1.2-.169,5.869,5.869,0,0,1,1.184.09,4.832,4.832,0,0,1,1.158.364,3.853,3.853,0,0,1,1.019.7,3.574,3.574,0,0,1,.724.985,3.811,3.811,0,0,1,.236.584.107.107,0,0,1,0,.077l-.328.716a.107.107,0,0,1-.2,0c-.084-.2-.185-.432-.23-.523a3.822,3.822,0,0,0-.239-.415,3.431,3.431,0,0,0-.287-.367,2.785,2.785,0,0,0-.336-.311,2.95,2.95,0,0,0-.791-.447,3.768,3.768,0,0,0-.905-.222c-.157-.018-.316-.032-.476-.036s-.323,0-.483.007a4.446,4.446,0,0,0-.924.158l-.114.031-.112.037-.112.038-.11.043c-.074.026-.147.059-.219.09s-.143.067-.214.1c-.141.071-.279.151-.414.235-.068.042-.132.088-.2.132s-.128.094-.193.141A4.817,4.817,0,0,0,477.7,23a4.183,4.183,0,0,0-.544,1.807,4.1,4.1,0,0,0,.314,1.854,4.4,4.4,0,0,0,1.09,1.525,5.02,5.02,0,0,0,.76.571,4.892,4.892,0,0,0,1.762.661c.076.016.153.021.229.032s.152.013.228.019a3.718,3.718,0,0,0,.448,0,3.31,3.31,0,0,0,.858-.181,4.121,4.121,0,0,0,.809-.4,6.114,6.114,0,0,0,1.4-1.266c.1-.123.2-.251.3-.381.046-.064.093-.13.136-.2s.085-.129.131-.2q.272-.431.513-.878t.452-.906c.14-.308.269-.618.4-.946A18.59,18.59,0,0,1,489.1,20.1c.054-.079.114-.158.173-.235s.117-.156.178-.233c.124-.153.246-.307.378-.455s.267-.3.4-.442l.214-.214c.072-.072.149-.139.223-.209s.153-.137.232-.2.158-.132.239-.194c.16-.127.328-.247.5-.364a7.753,7.753,0,0,1,1.094-.619,8.4,8.4,0,0,1,1.177-.442,10.113,10.113,0,0,1,1.2-.262c.4-.06.8-.1,1.188-.118.1-.006.2-.007.294-.011s.192-.009.3-.006l.315,0,.313.017a9.54,9.54,0,0,1,4.646,1.606c.086.059.17.121.255.182l.127.092c.042.031.082.065.123.1l.245.2.236.21.117.105.113.112.224.224.214.236.105.119.1.124.2.25.186.261.092.132.086.136.169.273.154.283.076.141c.024.049.046.1.069.146l.135.292c.042.1.079.2.119.3.083.2.143.4.209.608.035.1.056.206.083.309s.053.207.076.311a8.89,8.89,0,0,1,.169,1.259l.017.315C505.873,24.535,505.871,24.64,505.872,24.744Z" transform="translate(-476.02 -16.091)" fill="#003a8e"/>
+        <g id="Group_377-4" data-name="Group 377" transform="translate(1240.833 251)">
+          <g id="Group_8-4" data-name="Group 8">
+            <g id="Group_7-4" data-name="Group 7">
+              <path id="Path_3-4" data-name="Path 3" d="M504.174,24.252c0,.1,0,.2,0,.3l-.018.292-.009.146,0,.073-.009.072-.034.289c-.021.189-.057.393-.1.591a8,8,0,0,1-.836,2.249,8.5,8.5,0,0,1-1.415,1.895,8.947,8.947,0,0,1-1.862,1.442,8.081,8.081,0,0,1-1.067.52,8.265,8.265,0,0,1-1.137.362,7.7,7.7,0,0,1-1.172.189h-.016a1.214,1.214,0,0,1-.218-2.418,5.7,5.7,0,0,0,.811-.152,6.248,6.248,0,0,0,2.854-1.707,5.938,5.938,0,0,0,1.564-2.891c.026-.133.049-.262.064-.41l.027-.214.007-.054,0-.054.007-.107.015-.213c0-.071,0-.142,0-.211s0-.142,0-.211l-.012-.21a6.19,6.19,0,0,0-.1-.821c-.014-.067-.032-.133-.047-.2s-.028-.134-.051-.2c-.042-.13-.075-.262-.128-.387a5.485,5.485,0,0,0-2.009-2.558,6.62,6.62,0,0,0-1.509-.793c-.133-.054-.271-.093-.406-.14l-.207-.058-.1-.028-.1-.024a6,6,0,0,0-.841-.14l-.21-.019-.21-.008c-.067,0-.148,0-.224,0s-.154,0-.23,0c-.3.008-.606.025-.9.06a7.619,7.619,0,0,0-.854.15,5.616,5.616,0,0,0-.8.262,5.141,5.141,0,0,0-.748.383c-.121.076-.241.154-.359.24-.06.041-.117.085-.173.129s-.114.086-.17.134-.113.091-.167.142l-.165.148c-.107.1-.216.2-.32.316s-.207.222-.308.336c-.051.057-.1.117-.149.177s-.1.117-.147.179a14.274,14.274,0,0,0-1.065,1.559c-.325.551-.619,1.122-.894,1.715-.144.313-.3.638-.466.953s-.344.628-.531.932-.385.6-.591.891c-.05.07-.107.151-.164.226s-.115.149-.174.222c-.118.145-.241.286-.367.422a7.292,7.292,0,0,1-1.764,1.413,5.665,5.665,0,0,1-.524.257,5.476,5.476,0,0,1-.556.2,4.524,4.524,0,0,1-1.18.187,4.875,4.875,0,0,1-1.163-.114,5.888,5.888,0,0,1-1.085-.348,6.1,6.1,0,0,1-1.866-1.252,5.291,5.291,0,0,1-1.237-1.887,5.233,5.233,0,0,1-.28-1.1,5.51,5.51,0,0,1-.043-1.126,5.339,5.339,0,0,1,.613-2.158,5.552,5.552,0,0,1,1.423-1.727c.074-.057.148-.116.224-.172s.152-.109.232-.16a5.48,5.48,0,0,1,.489-.282c.084-.042.168-.086.255-.122s.172-.077.261-.11l.133-.05.135-.044.135-.043.138-.037a4.992,4.992,0,0,1,1.129-.16,5.534,5.534,0,0,1,1.116.085,4.556,4.556,0,0,1,1.092.344,3.635,3.635,0,0,1,.961.658,3.37,3.37,0,0,1,.683.929,3.6,3.6,0,0,1,.223.551.1.1,0,0,1,0,.073l-.309.675a.1.1,0,0,1-.184,0c-.079-.188-.175-.408-.217-.493a3.6,3.6,0,0,0-.225-.391,3.24,3.24,0,0,0-.271-.346,2.626,2.626,0,0,0-.316-.293,2.783,2.783,0,0,0-.746-.422,3.554,3.554,0,0,0-.854-.209c-.148-.017-.3-.03-.449-.034s-.3,0-.455.007a4.193,4.193,0,0,0-.871.149l-.107.03-.105.035-.106.036-.1.041c-.07.025-.138.055-.207.085s-.135.063-.2.1c-.133.067-.263.142-.39.222-.064.039-.125.083-.187.124s-.121.089-.182.133A4.543,4.543,0,0,0,477.6,22.61a3.945,3.945,0,0,0-.513,1.7,3.865,3.865,0,0,0,.3,1.748,4.15,4.15,0,0,0,1.028,1.438,4.732,4.732,0,0,0,.717.538,4.614,4.614,0,0,0,1.661.623c.072.015.144.02.216.03s.144.012.215.017a3.5,3.5,0,0,0,.422,0,3.122,3.122,0,0,0,.809-.171,3.885,3.885,0,0,0,.763-.378,5.765,5.765,0,0,0,1.322-1.194c.1-.116.19-.237.279-.359.044-.061.087-.123.128-.185s.08-.121.124-.192q.257-.407.484-.828t.426-.855c.132-.291.254-.583.375-.892a17.532,17.532,0,0,1,2-3.782c.051-.075.108-.149.163-.222s.11-.148.168-.22c.117-.144.232-.29.356-.43s.252-.279.381-.416l.2-.2c.068-.068.141-.131.21-.2s.144-.129.219-.192.149-.125.226-.183c.151-.12.31-.233.47-.343a7.313,7.313,0,0,1,1.032-.584,7.917,7.917,0,0,1,1.11-.416,9.539,9.539,0,0,1,1.134-.247c.377-.056.751-.09,1.121-.111.093-.005.185-.007.277-.01s.181-.008.283-.006l.3,0,.3.016a9,9,0,0,1,4.382,1.515c.081.056.16.114.24.172l.12.086c.039.03.078.061.116.092l.231.186.223.2.11.1.107.105.212.211.2.223.1.112.095.117.188.236.175.246.087.124.081.128.16.257.145.267.072.133c.023.046.043.092.065.138l.127.275c.04.093.075.188.112.282.078.187.135.381.2.573.033.1.052.195.079.292s.05.2.072.293a8.387,8.387,0,0,1,.16,1.187l.016.3C504.175,24.055,504.173,24.153,504.174,24.252Z" transform="translate(-476.02 -16.091)" fill="#003a8e"/>
             </g>
           </g>
         </g>
       </g>
     </g>
     <g id="Component_19_1" data-name="Component 19 – 1" transform="translate(911 2116)">
-      <circle id="Ellipse_640" data-name="Ellipse 640" cx="22" cy="22" r="22" fill="#fff"/>
-      <text id="_United_Kingdom_Cloobot_TechLabs_UK_Kemp_House_160_City_Road_London_United_Kingdom_EC1V_2NX_2" data-name="
-United Kingdom
-
-Cloobot TechLabs UK
-Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX
-" transform="translate(12 13)" fill="#fff" fontSize="16" fontFamily="Lato-Regular, Lato" letterSpacing="0.055em"><tspan x="10.44" y="16"></tspan></text>
+      <circle id="Ellipse_640" data-name="Ellipse 640" cx="22" cy="22" r="22" fill="#fff"
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)}
+      />
+      <text id="_United_Kingdom_EC1V_2NX_2" 
+      data-name=" United Kingdom Cloobot TechLabs UK Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX" 
+      transform="translate(12 13)" 
+      fill="#212121" 
+      fontSize="20" 
+      fontFamily="Lato-Regular, Lato" 
+      letterSpacing="0.055em"
+      textAnchor="middle" y="40">
+      <tspan x="20" dy="25">United Kingdom</tspan>
+      <tspan x="20" dy="25">Cloobot TechLabs UK</tspan>
+      <tspan x="20" dy="25">Kemp House, </tspan>
+      <tspan x="20" dy="25">160 City Road, </tspan>
+      <tspan x="20" dy="25">London, </tspan>
+      <tspan x="20" dy="25">United Kingdom, </tspan>
+      <tspan x="20" dy="25">EC1V 2NX</tspan>
+      </text>
       <g id="Group_481" data-name="Group 481" transform="translate(-1234.413 -236.5)">
         <g id="Group_373-4" data-name="Group 373" transform="translate(1252.894 262.754)">
           <g id="Group_11-4" data-name="Group 11">

@@ -712,16 +712,33 @@ body {
           text {
             display: none;
           }
-          g #Component_20_1 {
-            &:hover {
-              #Ellipse_636 {
-                transform: scale(1.5);
+          g {
+            &#Component_17_1 {
+              &:hover {
+                text {
+                  display: block;
+                }
               }
-              #Group_378 {
-                margin: 0 auto;
+            }
+            &#Component_18_1 {
+              &:hover {
+                text {
+                  display: block;
+                }
               }
-              text {
-                //display: block;
+            }
+            &#Component_19_1 {
+              &:hover {
+                text {
+                  display: block;
+                }
+              }
+            }
+            &#Component_20_1 {
+              &:hover {
+                text {
+                  display: block;
+                }
               }
             }
           }
