@@ -256,7 +256,7 @@ class Globalmap extends React.Component {
     <circle id="Ellipse_377" data-name="Ellipse 377" cx="8.5" cy="8.5" r="8.5" transform="translate(1515 1980)" fill="#6dcdf7"/>
     <circle id="Ellipse_364" data-name="Ellipse 364" cx="40" cy="10" r="10" transform="translate(1622 2215)" fill="#6dcdf7"/>
     <g id="Component_20_1" data-name="Component 20 – 1" transform="translate(358 2175)">
-      <circle id="Ellipse_636" data-name="Ellipse 636" cx="65" cy="65" r="65" fill="#fff" 
+      <circle id="Ellipse_636" data-name="Ellipse 636" cx="65" cy="65" r="65" fill="#06ff59" 
         onMouseOver={e =>this.changeCircle(e)}
         onMouseOut={e =>this.changeCircleNormal(e)} 
         />
@@ -302,7 +302,7 @@ class Globalmap extends React.Component {
                 Cloobot TechLabs Americas
                 Cheyenne 30 N Gould St, STE 4000 Sheridan, Wyoming" 
                 transform="translate(31 29)" 
-                fill="rgb(109, 205, 247)" 
+                fill="#000" 
                 fontSize="20" 
                 fontFamily="Lato-Bold, Lato" 
                 fontWeight="700" textAnchor="middle" y="115">
@@ -315,7 +315,7 @@ class Globalmap extends React.Component {
     </g>
     <g id="Component_17_1" data-name="Component 17 – 1" transform="translate(1027 2133)">
       <g id="Group_382" data-name="Group 382" transform="translate(13 13)">
-        <circle id="Ellipse_638" data-name="Ellipse 638" cx="54.5" cy="54.5" r="54.5" transform="translate(-13 -13)" fill="#fff" 
+        <circle id="Ellipse_638" data-name="Ellipse 638" cx="54.5" cy="54.5" r="54.5" transform="translate(-13 -13)" fill="#06ff59" 
           onMouseOver={e =>this.changeCircle(e)}
           onMouseOut={e =>this.changeCircleNormal(e)}
         />
@@ -374,7 +374,7 @@ class Globalmap extends React.Component {
     </g>
 
     <g id="Component_18_1" data-name="Component 18 – 1" transform="translate(1272 2365)">
-      <circle id="Path_4680" data-name="Path 4680" cx="22" cy="22" r="22" fill="#fff"
+      <circle id="Path_4680" data-name="Path 4680" cx="22" cy="22" r="22" fill="#06ff59"
         onMouseOver={e =>this.changeCircle(e)}
         onMouseOut={e =>this.changeCircleNormal(e)}
       />
@@ -428,7 +428,7 @@ class Globalmap extends React.Component {
       </g>
     </g>
     <g id="Component_19_1" data-name="Component 19 – 1" transform="translate(911 2116)">
-      <circle id="Ellipse_640" data-name="Ellipse 640" cx="22" cy="22" r="22" fill="#fff"
+      <circle id="Ellipse_640" data-name="Ellipse 640" cx="22" cy="22" r="22" fill="#06ff59"
         onMouseOver={e =>this.changeCircle(e)}
         onMouseOut={e =>this.changeCircleNormal(e)}
       />

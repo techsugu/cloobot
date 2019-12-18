@@ -1,4 +1,6 @@
 import React from "react";
+import $ from "jquery";
+import Particle from "./Particlebg";
 import Tabs from "./Tabs";
 import Image from "../../images/allIsometria.svg";
 import Image2 from "../../images/security.png";
@@ -7,9 +9,54 @@ import Contact from "./Contact";
 import Testimonial from "./Testimonial";
 
 class Home extends React.Component {
+    componentDidMount() {
+        let initialSrc = "../../images/Home/lap.png";
+        let scrollSrc = "../../images/Home/laptop_bag.png";
+        let isScrolling = true;
+
+        $(window).scroll(function () {
+            var value = $(this).scrollTop();
+            console.log(value)
+            if (value >= 100 && isScrolling) {
+                $("#img").fadeOut(100, function () {
+                    $("#img").fadeIn(100).attr("src", scrollSrc).animate({});
+                });
+                isScrolling = false;
+            }
+            else if (value <= 100 && !isScrolling) {
+                $("#img").fadeOut(100, function () {
+                    $("#img").fadeIn(100).attr("src", initialSrc);
+                });
+                isScrolling = true;
+            }
+        });
+    }
+
     render() {
         return (
             <React.Fragment>
+                <section className="pro-home d-flex align-items-center">
+                    <div className="particle_js" id="particle_js"><Particle /></div>
+                    <div className="container">
+                        <div className="row d-flex align-items-center">
+                            <div className="col-xl-6 col-lg-6 col-sm-12">
+                                <div className="pro-home-left p-lg-4">
+                                    <img src="../../images/Home/encompass.svg" alt="Encompass" className="img-fluid pro-home-img" />
+                                    <p className="pro-home-details">Provide a Personal assistant for all your resources Enable resources to use their time efficiently Have a better visibility over your data Have a better visibility over your data</p>
+                                </div>
+                            </div>
+                            <div className="col-xl-6 col-lg-6 col-sm-12">
+                                <div className="pro-home-right text-center">
+                                    <img src="../../images/Home/bg_circle.png" className="img-fluid rounded" alt="circle" />
+                                    <span className="img_sec d-flex align-items-center" id="img_sec">
+                                        <img src="../../images/Home/lap.png" className="img-fluid" id="img" alt="laptop" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="pro-home-1 d-flex align-items-center">
                     <div className="container">
                         <div className="row d-flex align-items-center">
@@ -27,6 +74,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </section>
+
                 <section className="pro-home-2 d-flex align-items-center">
                     <div className="container">
                         <div className="row d-flex align-items-center">
@@ -44,6 +92,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </section>
+
                 <section className="pro-home-3">
                     <div className="container">
                         <div className="row d-flex align-items-center">
@@ -72,14 +121,7 @@ class Home extends React.Component {
                 <section className="pro-home-5">
                     <Tabs />
                 </section>
-                <section className="pro-testimonial">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 col-sm-12 mb-5 text-center">
-                                <h2 className="title">Here's what our clients had to say!</h2>
-                            </div>
-                        </div>
-                    </div>
+                <section className="pro-testimonial d-flex align-items-center">
                     <Testimonial />
                 </section>
                 <section className="pro-home-6">

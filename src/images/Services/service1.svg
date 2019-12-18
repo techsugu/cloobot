@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
+  <g id="Group_565" data-name="Group 565" transform="translate(12617 4357)">
+    <circle id="Ellipse_757" data-name="Ellipse 757" cx="30.5" cy="30.5" r="30.5" transform="translate(-12617 -4357)" fill="#fff" opacity="0.57"/>
+    <g id="Group_548" data-name="Group 548" transform="translate(-12605.54 -4342.881)">
+      <path id="Path_12697" data-name="Path 12697" d="M806.763,706.823l-3.341-3.341v-4.9h-1.435v4.9l-3.341,3.341a.717.717,0,0,0,1.015,1.015l2.326-2.326v1.819a.717.717,0,1,0,1.435,0v-1.819l2.326,2.326a.717.717,0,1,0,1.014-1.015Z" transform="translate(-783.529 -669.697)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+      <path id="Path_12698" data-name="Path 12698" d="M749.91,604.965h36.818v24.892a2.4,2.4,0,0,1-2.4,2.4H752.307a2.4,2.4,0,0,1-2.4-2.4V604.965Z" transform="translate(-749.145 -603.363)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+      <rect id="Rectangle_1135" data-name="Rectangle 1135" width="38.35" height="1.793" rx="0.897" transform="translate(0 0)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+      <rect id="Rectangle_1136" data-name="Rectangle 1136" width="38.35" height="2.387" rx="1.194" transform="translate(0 26.494)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+      <path id="Path_12699" data-name="Path 12699" d="M828.814,648.874H824.82a1.2,1.2,0,0,0-.847,2.046l2.8,2.8a1.193,1.193,0,0,0,1.8-.121A7.96,7.96,0,0,0,830,650.265a1.2,1.2,0,0,0-1.184-1.391Z" transform="translate(-801.375 -634.477)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+      <path id="Path_12700" data-name="Path 12700" d="M791.347,628.447v-6.162a1.2,1.2,0,0,0-1.444-1.175,8,8,0,1,0,6.058,14.5,1.2,1.2,0,0,0,.2-1.856l-4.461-4.461A1.2,1.2,0,0,1,791.347,628.447Z" transform="translate(-772.97 -614.786)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+      <path id="Path_12701" data-name="Path 12701" d="M816.047,625.537h5.39a1.194,1.194,0,0,0,1.185-1.385,8.009,8.009,0,0,0-6.373-6.474,1.193,1.193,0,0,0-1.4,1.182v5.478A1.2,1.2,0,0,0,816.047,625.537Z" transform="translate(-795.16 -612.359)" fill="#fff" stroke="#194d99" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

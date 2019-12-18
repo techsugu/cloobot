@@ -24,7 +24,7 @@ class Header extends React.Component {
         });
     }
     render() {
-        let custom_class = this.state.show ? "fa fa-times" : "fa fa-plus";
+        let custom_class = this.state.show ? "fa fa-times" : "fa fa-bars";
         return (
             <nav className="navbar fixed-top navbar-expand-lg pro-nav-background" >
                 <div className="navbar-brand">
