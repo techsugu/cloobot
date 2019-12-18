@@ -97,6 +97,7 @@ body .pro .pro-nav-background .navbar-collapse .navbar-nav {
 
 body .pro .pro-nav-background .navbar-collapse .navbar-nav .nav-item {
   padding: 5px 15px;
+  position: relative;
 }
 
 body .pro .pro-nav-background .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -107,13 +108,27 @@ body .pro .pro-nav-background .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 body .pro .pro-nav-background .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 1px solid #717171;
+  border-bottom: 1px solid transparent;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
 
 body .pro .pro-nav-background .navbar-collapse .navbar-nav .nav-item .nav-link.active {
-  color: red;
+  color: #021531;
+  font-weight: bold;
+}
+
+body .pro .pro-nav-background .navbar-collapse .navbar-nav .nav-item .nav-link.active:before {
+  content: "";
+  border-bottom: 4px solid #021531;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  bottom: -6px;
+  border-radius: 4px 4px 0 0;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
 }
 
 body .pro .pro-nav-background .navbar-collapse.show {
