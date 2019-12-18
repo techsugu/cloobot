@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "./Contact";
-import Logo from "../../images/logo.svg";
+import Logo from "../../images/logo@2x.svg";
 
 class Partners extends React.Component {
     constructor(props) {

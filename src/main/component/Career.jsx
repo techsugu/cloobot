@@ -1,12 +1,12 @@
 import React from "react";
 import 'aos/dist/aos.css';
-
 import Contact from "../component/Contact";
 import job_data from "../Json/joblist.json";
 
 import Logo from "../../images/logo@2x.svg";
 
 class JobList extends React.Component {
+
     render() {
         let jobs = [];
         this.props.data.forEach((element, i) => {
@@ -36,22 +36,26 @@ class JobList extends React.Component {
                                 <div className="col-lg-6 col-xl-6 col-sm-12 pl-3">
                                     <form>
                                         <div className="job_form">
-                                            <div className="col">
-                                                <input type="text" className="form-control" placeholder="Enter Your Name" name="name" />
+                                            <div className="form-group">
+                                                <label htmlFor="name" className="name">Name </label>
+                                                <input type="text" className="form-control name" placeholder="Enter Your Name" name="name" onChange={(e) => this.props.handleChange(e, i)} value={this.props.career_data['name']} />
                                             </div>
-                                            <div className="row m-0">
-                                                <div className="col">
-                                                    <input type="text" className="form-control" placeholder="Enter email" name="email" />
+                                            <div className="form-row">
+                                                <div className="form-group col-md-6">
+                                                    <label htmlFor="email" className="email">Email </label>
+                                                    <input type="text" className="form-control email" placeholder="Enter email" name="email" onChange={(e) => this.props.handleChange(e, i)} value={this.props.career_data['email']} />
                                                 </div>
-                                                <div className="col">
-                                                    <input type="text" className="form-control" placeholder="Enter Your Phone" name="phone" />
+                                                <div className="form-group col-md-6">
+                                                    <label htmlFor="phone" className="phone">Phone </label>
+                                                    <input type="text" className="form-control phone" placeholder="Enter Your Phone" name="phone" onChange={(e) => this.props.handleChange(e, i)} value={this.props.career_data['phone']} />
                                                 </div>
                                             </div>
-                                            <div className="col">
-                                                <input type="file" className="custom-file-input" id="customFile" />
-                                                <label className="custom-file-label" htmlFor="customFile">Choose file</label>
+                                            <div className="input-group justify-content-between">
+                                                <div className="custom-file">
+                                                    {/* <input type="file" className="file-input" name="resume" id="customFile" onChange={(e) => this.props.handleChange(e, i)} value={this.props.career_data['resume']} /> */}
+                                                </div>
                                             </div>
-                                            <button className="btn btn-light pro-apply d-flex mt-4 mx-auto">Apply</button>
+                                            <button className="btn btn-light pro-apply d-flex align-self-center" id={i} onClick={e => this.props.handleSubmit(e, i)}>Apply</button>
                                         </div>
                                     </form>
                                 </div>
@@ -87,12 +91,40 @@ class Career extends React.Component {
         super(props);
         this.state = {
             show: false,
-            data: job_data
+            data: job_data,
+            career_data: [{
+                name: "",
+                email: "",
+                phone: "",
+                resume: ""
+            }]
         };
 
         this.handleReadMore = this.handleReadMore.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
         this.myRef = React.createRef();
+    }
+
+    handleChange(e, index) {
+        let name = e.target.name;
+        let value = e.target.value;
+
+        this.setState(prevState => {
+            let career_data = prevState.career_data;
+            career_data[name] = value
+            return career_data;
+        });
+    }
+
+    handleSubmit(e, id) {
+        e.preventDefault();
+        console.log(id);
+        const data = this.state.career_data
+        this.setState({
+            career_data: data
+        })
     }
 
     handleReadMore(e, id) {
@@ -174,7 +206,10 @@ class Career extends React.Component {
                     <JobList
                         show={this.state.show}
                         handleReadMore={this.handleReadMore}
-                        data={this.state.data} />
+                        data={this.state.data}
+                        handleSubmit={this.handleSubmit}
+                        handleChange={this.handleChange}
+                        career_data={this.state.career_data} />
                 </section>
                 <Contact />
             </React.Fragment>

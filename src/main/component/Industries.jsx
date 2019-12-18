@@ -1,5 +1,4 @@
 import React from "react";
-import Particle from "./Particlebg";
 import Contact from "./Contact";
 
 class Industries extends React.Component {
@@ -13,7 +12,6 @@ class Industries extends React.Component {
         return (
             <React.Fragment>
                 <section className="pro-industries d-flex align-items-center">
-                    <div className="particle_js" id="particle_js"><Particle /></div>
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-6 col-lg-6 col-sm-12 p-lg-0">

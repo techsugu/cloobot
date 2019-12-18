@@ -1,49 +1,13 @@
 import React from "react";
+// import $ from "jquery";
 import Testimonial from "./Testimonial";
 import Contact from "../component/Contact";
+import Service1 from "../../images/Services/service1.svg";
+import Service2 from "../../images/Services/service2.svg";
+import Service3 from "../../images/Services/service3.svg";
+import Service4 from "../../images/Services/service4.svg";
 
 class Services extends React.Component {
-    // componentDidMount() {
-    //     // Get a reference to the <path>
-    //     var path = document.querySelector('#line_path');
-
-    //     // Get length of path... ~577px in this case
-    //     var pathLength = path.getTotalLength();
-
-    //     console.log(pathLength, "pathlen");
-
-    //     // Make very long dashes (the length of the path itself)
-    //     path.style.strokeDasharray = pathLength + ' ' + pathLength;
-
-    //     // Offset the dashes so the it appears hidden entirely
-    //     path.style.strokeDashoffset = pathLength;
-
-    //     path.getBoundingClientRect();
-
-    //     // When the page scrolls...
-    //     window.addEventListener("scroll", function (e) {
-    //         var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
-    //         console.log(document.body.scrollTop);
-
-    //         // Length to offset the dashes
-    //         var drawLength = pathLength * scrollPercentage;
-
-    //         console.log(drawLength);
-
-    //         // Draw in reverse
-    //         path.style.strokeDashoffset = pathLength - drawLength;
-
-    //         // When complete, remove the dash array, otherwise shape isn't quite sharp
-    //         // Accounts for fuzzy math
-    //         if (scrollPercentage >= 0.75) {
-    //             path.style.strokeDasharray = "none";
-    //         } else {
-    //             path.style.strokeDasharray = pathLength + ' ' + pathLength;
-    //         }
-    //     });
-    // }
-
     render() {
         return (
             <React.Fragment>
@@ -65,21 +29,23 @@ class Services extends React.Component {
                 </div>
                 <div className="pro-service-list" id="service_list">
                     <div className="container">
-                        <div className="svg_element_container" id="svg_section">
-                            <svg id="line_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1500" width="100%" height="1500px">
+                        {/* <div className="svg_element_container" id="svg_section">
+                            <svg id="route" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2500" width="100%" height="2500px">
                                 <path
-                                    id="line_path"
-                                    className="svg_line"
+                                    id="path"
+                                    className="path"
+                                    fill="none"
+                                    stroke="#194d99"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
                                     d="M862.000,-2.000 L862.000,224.000 L297.000,224.000 L297.000,563.000 L1596.500,563.000 L1596.500,902.000 L297.000,902.000 L297.000,1241.000 L1596.500,1241.000 L1596.500,1495.250" />
                             </svg>
-                        </div>
-
-
-                        <div className="d-flex align-items-center mt-4 mb-4">
+                        </div> */}
+                        <div className="d-flex align-items-center mt-lg-4 mb-lg-4">
                             <div className="card service_1">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-3 text-center">
-                                        <img src="http://via.placeholder.com/150x150/ccc" className="rounded" alt="text" />
+                                        <img src={Service1} className="img-fluid cust_img" alt="text" data-aos="slide-up" data-aos-duration="800" />
                                     </div>
                                     <div className="col-md-9">
                                         <div className="card-body">
@@ -90,7 +56,7 @@ class Services extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center mt-4 mb-4">
+                        <div className="d-flex align-items-center mt-lg-4 mb-lg-4">
                             <div className="card service_2">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-9">
@@ -100,16 +66,18 @@ class Services extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-md-3 text-center">
-                                        <img src="http://via.placeholder.com/150x150/ccc" className="rounded" alt="text" />
+                                        <img src={Service2} className="img-fluid cust_img" alt="text" data-aos="slide-down" data-aos-duration="800" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center mt-4 mb-4">
+                        <div className="d-flex align-items-center mt-lg-4 mb-lg-4">
                             <div className="card service_3">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-3 text-center">
-                                        <img src="http://via.placeholder.com/150x150/ccc" className="rounded" alt="text" />
+                                        <img src={Service3} className="img-fluid cust_img" alt="text"
+                                            data-aos="slide-up" data-aos-duration="800"
+                                        />
                                     </div>
                                     <div className="col-md-9">
                                         <div className="card-body">
@@ -120,7 +88,7 @@ class Services extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center mt-4 mb-4">
+                        <div className="d-flex align-items-center mt-lg-4 mb-lg-4">
                             <div className="card service_4">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-9">
@@ -130,21 +98,16 @@ class Services extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-md-3 text-center">
-                                        <img src="http://via.placeholder.com/150x150/ccc" className="rounded" alt="text" />
+                                        <img src={Service4} className="img-fluid cust_img" alt="text"
+                                            data-aos="slide-down" data-aos-duration="800"
+                                        />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="pro-testimonial">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 col-sm-12 mb-5 text-center">
-                                <h2 className="title">Here's what our clients had to say!</h2>
-                            </div>
-                        </div>
-                    </div>
+                <div className="pro-testimonial d-flex align-items-center">
                     <Testimonial />
                 </div>
                 <div className="pro-service-con">
