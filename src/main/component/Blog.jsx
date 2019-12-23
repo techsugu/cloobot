@@ -13,7 +13,7 @@ class Bottom extends React.Component {
     }
     render() {
         return (
-            <div className="blog_slide" >
+            <div className="blog_slide " >
                 <AliceCarousel
                     responsive={this.responsive}
                     infinite={true}
@@ -74,8 +74,32 @@ class SmallBlog extends React.Component {
             <div className="small_blog">
                 <div className="row">
                     <div className="col-lg-6 col-sm-12">
-                        <div className="card">
-                            <img className="card-img" alt="text" src="../../images/Blog/multipleorgs@2x.png" />
+                        <div class="card-horizontal d-flex align-items-center">
+                            <div class="img-square-wrapper">
+                                <img src="../../images/Blog/headway-5QgIuuBxKwM-unsplash.png" class="rounded" alt="Blog_Image" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Post Title</h4>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-sm-12">
+                        <div class="card-horizontal d-flex align-items-center">
+                            <div class="img-square-wrapper">
+                                <img src="../../images/Blog/headway-5QgIuuBxKwM-unsplash.png" class="rounded" alt="Blog_Image" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Post Title</h4>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-6 col-sm-12">
+                        <div className="card small_card">
+                            <img className="card-img" alt="text" src="../../images/Blog/multipleorgs.png" />
                             <div className="card-img-overlay">
                                 <h5 className="card-title">Post Title</h5>
                                 <p className="card-text">
@@ -84,8 +108,8 @@ class SmallBlog extends React.Component {
                         </div>
                     </div>
                     <div className="col-lg-6 col-sm-12">
-                        <div className="card">
-                            <img className="card-img" alt="text" src="../../images/Blog/multipleorgs@2x.png" />
+                        <div className="card small_card">
+                            <img className="card-img" alt="text" src="../../images/Blog/multipleorgs.png" />
                             <div className="card-img-overlay">
                                 <h5 className="card-title">Post Title</h5>
                                 <p className="card-text">

@@ -43,14 +43,54 @@ class Home extends React.Component {
                                 <div className="pro-home-left p-lg-4">
                                     <img src="../../images/Home/encompass.svg" alt="Encompass" className="img-fluid pro-home-img" />
                                     <p className="pro-home-details">Provide a Personal assistant for all your resources Enable resources to use their time efficiently Have a better visibility over your data Have a better visibility over your data</p>
+                                    <button className="btn btn-primary download pro-btn">Download White Paper</button>
                                 </div>
                             </div>
                             <div className="col-xl-6 col-lg-6 col-sm-12">
                                 <div className="pro-home-right text-center">
-                                    <img src="../../images/Home/bg_circle.png" className="img-fluid rounded" alt="circle" />
+                                    <img src="../../images/Home/bg_circle.png" className="img-fluid circle_bg" alt="circle" />
                                     <span className="img_sec d-flex align-items-center" id="img_sec">
-                                        <img src="../../images/Home/lap.png" className="img-fluid" id="img" alt="laptop" />
+                                        <img src="../../images/Home/lap.png" className="img-fluid laptop" id="img" alt="laptop" />
                                     </span>
+                                    <div className="home_circle">
+                                        <span className="circle1">
+                                            <img src="../../images/Home/circle1.png" className="img-fluid circle1_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle2">
+                                            <img src="../../images/Home/circle2.png" className="img-fluid circle2_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle3">
+                                            <img src="../../images/Home/circle3.png" className="img-fluid circle3_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle4">
+                                            <img src="../../images/Home/circle4.png" className="img-fluid circle4_img" id="img" alt="laptop" />
+                                        </span>
+                                    </div>
+                                    <div className="home_circle_inner">
+                                        <span className="circle1_inner">
+                                            <img src="../../images/Home/circle1_inner.png" className="img-fluid circle1__inner_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle2_inner">
+                                            <img src="../../images/Home/circle2_inner.png" className="img-fluid circle2__inner_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle3_inner">
+                                            <img src="../../images/Home/circle3_inner.png" className="img-fluid circle3__inner_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle4_inner">
+                                            <img src="../../images/Home/circle4_inner.png" className="img-fluid circle4__inner_img" id="img" alt="laptop" />
+                                        </span>
+                                    </div>
+                                    <div className="home_circle_small">
+                                        <span className="circle1_small">
+                                            <img src="../../images/Home/circle_small1.png" className="img-fluid circle1__small_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle2_small">
+                                            <img src="../../images/Home/circle_small2.png" className="img-fluid circle2__small_img" id="img" alt="laptop" />
+                                        </span>
+                                        <span className="circle3_small">
+                                            <img src="../../images/Home/circle_small3.png" className="img-fluid circle3__small_img" id="img" alt="laptop" />
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +119,7 @@ class Home extends React.Component {
                     <div className="container">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-6 col-lg-6 col-sm-12">
-                                <div className="pro-home-left">
+                                <div className="pro-home-left p-lg-4">
                                     <h4 className="pro-home-title">Data security and privacy</h4>
                                     <p className="pro-home-details">We care about data security and privacy of our users the most. We believe in a world where people have the highest authority and control over the data pertaining to their digital footprint.</p>
                                 </div>
@@ -102,7 +142,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                             <div className="col-xl-6 col-lg-6 col-sm-12">
-                                <div className="pro-home-left">
+                                <div className="pro-home-left p-lg-4">
                                     <h4 className="pro-home-title">Access your business through mobile</h4>
                                     <p className="pro-home-details">We care about data security and privacy of our users the most. We believe in a world where people have the highest authority and control over the data pertaining to their digital footprint.</p>
                                 </div>

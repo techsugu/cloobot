@@ -1,11 +1,6 @@
 import React from "react";
-// import $ from "jquery";
 import Testimonial from "./Testimonial";
 import Contact from "../component/Contact";
-import Service1 from "../../images/Services/service1.svg";
-import Service2 from "../../images/Services/service2.svg";
-import Service3 from "../../images/Services/service3.svg";
-import Service4 from "../../images/Services/service4.svg";
 
 class Services extends React.Component {
     render() {
@@ -29,23 +24,13 @@ class Services extends React.Component {
                 </div>
                 <div className="pro-service-list" id="service_list">
                     <div className="container">
-                        {/* <div className="svg_element_container" id="svg_section">
-                            <svg id="route" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2500" width="100%" height="2500px">
-                                <path
-                                    id="path"
-                                    className="path"
-                                    fill="none"
-                                    stroke="#194d99"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    d="M862.000,-2.000 L862.000,224.000 L297.000,224.000 L297.000,563.000 L1596.500,563.000 L1596.500,902.000 L297.000,902.000 L297.000,1241.000 L1596.500,1241.000 L1596.500,1495.250" />
-                            </svg>
-                        </div> */}
                         <div className="d-flex align-items-center mt-lg-4 mb-lg-4">
                             <div className="card service_1">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-3 text-center">
-                                        <img src={Service1} className="img-fluid cust_img" alt="text" data-aos="slide-up" data-aos-duration="800" />
+                                        <div className="service_img">
+                                            <img src="../../images/Services/service1.svg" className="img-fluid cust_img" alt="service" data-aos="slide-up" data-aos-duration="800" />
+                                        </div>
                                     </div>
                                     <div className="col-md-9">
                                         <div className="card-body">
@@ -66,7 +51,9 @@ class Services extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-md-3 text-center">
-                                        <img src={Service2} className="img-fluid cust_img" alt="text" data-aos="slide-down" data-aos-duration="800" />
+                                        <div className="service_img">
+                                            <img src="../../images/Services/service2.svg" className="img-fluid cust_img" alt="service" data-aos="slide-down" data-aos-duration="800" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -75,9 +62,9 @@ class Services extends React.Component {
                             <div className="card service_3">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-3 text-center">
-                                        <img src={Service3} className="img-fluid cust_img" alt="text"
-                                            data-aos="slide-up" data-aos-duration="800"
-                                        />
+                                        <div className="service_img">
+                                            <img src="../../images/Services/service3.svg" className="img-fluid cust_img" alt="service" data-aos="slide-up" data-aos-duration="800" />
+                                        </div>
                                     </div>
                                     <div className="col-md-9">
                                         <div className="card-body">
@@ -98,9 +85,9 @@ class Services extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-md-3 text-center">
-                                        <img src={Service4} className="img-fluid cust_img" alt="text"
-                                            data-aos="slide-down" data-aos-duration="800"
-                                        />
+                                        <div className="service_img">
+                                            <img src="../../images/Services/service4.svg" className="img-fluid cust_img" alt="service" data-aos="slide-down" data-aos-duration="800" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

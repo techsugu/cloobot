@@ -42,7 +42,7 @@ class Partners extends React.Component {
                         <div className="row">
                             <div className="col-lg-4 col-sm-12">
                                 <div className="card">
-                                    <img className="card-img-top" src="../../images/partners-bg.svg" alt="Card" />
+                                    <img className="card-img-top" src="../../images/Partners/solutions.svg" alt="Solutions" />
                                     <div className="card-body">
                                         <h4 className="card-title">Solution Partner</h4>
                                         <p className="card-text">Leverage your technical and sales capabilities to consult, sell, customize and implement Freshworks products for businesses globally.</p>
@@ -51,7 +51,7 @@ class Partners extends React.Component {
                             </div>
                             <div className="col-lg-4 col-sm-12">
                                 <div className="card">
-                                    <img className="card-img-top" src="../../images/ISV_partner.png" alt="Card" />
+                                    <img className="card-img-top" src="../../images/Partners/isv.svg" alt="isv" />
                                     <div className="card-body">
                                         <h4 className="card-title">ISV Partner</h4>
                                         <p className="card-text">Leverage your technical and sales capabilities to consult, sell, customize and implement Freshworks products for businesses globally.</p>
@@ -60,7 +60,7 @@ class Partners extends React.Component {
                             </div>
                             <div className="col-lg-4 col-sm-12">
                                 <div className="card">
-                                    <img className="card-img-top" src="../../images/affiliate_partner.png" alt="Card" />
+                                    <img className="card-img-top" src="../../images/Partners/affiliate.svg" alt="Affliate" />
                                     <div className="card-body">
                                         <h4 className="card-title">Affiliate Partner</h4>
                                         <p className="card-text">Leverage your technical and sales capabilities to consult, sell, customize and implement Freshworks products for businesses globally.</p>

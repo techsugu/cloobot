@@ -55,7 +55,6 @@ class Testimonial extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div className="item">
                                 <div className="card">
