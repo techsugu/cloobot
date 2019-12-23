@@ -540,6 +540,14 @@ body {
               color: #0b0b0b;
             }
           }
+          .view {
+            .pro-btn {
+              color: #2d2d2d;
+              .fa-arrow-right {
+                -webkit-text-stroke: 1px #fff;
+              }
+            }
+          }
         }
         .nav-pills {
           padding: 10px;
