@@ -9,11 +9,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: true
+      loading: false
     };
   }
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: true }), 5000);
+    setTimeout(() => this.setState({ loading: true }), 10000);
   }
 
   render() {
