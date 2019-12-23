@@ -175,7 +175,7 @@ class Fullblog extends React.Component {
         return (
             <div className="full_post">
                 <div className="col-lg-12 col-sm-12">
-                    <button className="btn btn-primary" onClick={e => this.props.backToLogs(e)}>Back</button>
+                    <button className="btn btn-primary pro-btn btn-back" onClick={e => this.props.backToLogs(e)}>Back</button>
                     {read_body}
                 </div>
             </div>
