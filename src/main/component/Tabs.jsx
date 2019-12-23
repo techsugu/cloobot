@@ -1,5 +1,6 @@
 import React from "react";
-import AliceCarousel from 'react-alice-carousel'
+import $ from "jquery";
+import AliceCarousel from 'react-alice-carousel';
 
 class Tabs extends React.Component {
     constructor(props) {
@@ -16,6 +17,19 @@ class Tabs extends React.Component {
     componentDidMount() {
         window.addEventListener("resize", this.resize.bind(this));
         this.resize();
+
+        $(document).ready(function () {
+            $(".nav-pills a").click(function () {
+                var index = $(this).index();
+                if (index % 2 === 0) {
+                    $('#tab-pills').addClass('dark');
+                    $('#tab-pills').removeClass('light');
+                } else {
+                    $('#tab-pills').addClass('light');
+                    $('#tab-pills').removeClass('dark');
+                }
+            });
+        });
     }
 
     resize() {
@@ -26,10 +40,10 @@ class Tabs extends React.Component {
 
     render() {
         return (
-            <div className="flex-row d-flex justify-content-center w-100">
+            <div id="tab-pills" className="flex-row d-flex justify-content-center align-items-center dark">
                 {(!this.state.hideNav) ?
                     <React.Fragment>
-                        <div className="col-lg-3 col-xl-3 pt-5 mt-lg-5">
+                        <div className="col-lg-3 col-xl-3 p-0">
                             <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><div className="tab-title"> Sales <span className="tab-subtitle">Operations</span></div></a>
                                 <a className="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><div className="tab-title"> Human <span className="tab-subtitle">Resources</span></div></a>

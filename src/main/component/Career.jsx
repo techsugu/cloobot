@@ -1,4 +1,5 @@
 import React from "react";
+import $ from "jquery";
 import 'aos/dist/aos.css';
 import Contact from "../component/Contact";
 import job_data from "../Json/joblist.json";
@@ -6,7 +7,17 @@ import job_data from "../Json/joblist.json";
 import Logo from "../../images/logo@2x.svg";
 
 class JobList extends React.Component {
-
+    componentDidMount() {
+        var scrollBottom = $(window).scrollTop() + $(window).height();
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 800) {
+                $(".item1").addClass("pos");
+            } else if (scrollBottom >= 600) {
+                $(".item1").removeClass("pos");
+            }
+        });
+    }
     render() {
         let jobs = [];
         this.props.data.forEach((element, i) => {
@@ -15,8 +26,9 @@ class JobList extends React.Component {
                     <div className="list">
                         <div className="job_title">{element.job_title}</div>
                         <div className="job_location text-center">{element.job_location}</div>
+                        <div className="job_avalilable text-center">{element.job_available}</div>
                         <div className="apply text-center">
-                            <span id={i} className="btn btn-light pro-read-more" onClick={(e) => this.props.handleReadMore(e, i)}>Read</span>
+                            <span id={i} className="btn btn-light pro-read-more pro-btn" onClick={(e) => this.props.handleReadMore(e, i)}>Read</span>
                         </div>
                     </div>
                     <React.Fragment>
@@ -51,11 +63,20 @@ class JobList extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="input-group justify-content-between">
-                                                <div className="custom-file">
-                                                    {/* <input type="file" className="file-input" name="resume" id="customFile" onChange={(e) => this.props.handleChange(e, i)} value={this.props.career_data['resume']} /> */}
+                                                <div className="custom-file-choose">
+                                                    <label htmlFor="resume" className="resume">Resume </label>
+                                                    <input
+                                                        type="file"
+                                                        className="file-input"
+                                                        name="resume"
+                                                        id="customFile"
+                                                        onChange={(e) => this.props.handleChange(e, i)}
+                                                        value={this.props.career_data['resume']}
+                                                    />
+                                                    <span className="btn btn-default btn-resume">{this.props.career_data['resume'] ? this.props.filename(this.props.career_data['resume']) : "Upload"}</span>
                                                 </div>
                                             </div>
-                                            <button className="btn btn-light pro-apply d-flex align-self-center" id={i} onClick={e => this.props.handleSubmit(e, i)}>Apply</button>
+                                            <button className="btn btn-light pro-btn pro-apply d-flex align-self-center" id={i} onClick={e => this.props.handleSubmit(e, i)}>Apply</button>
                                         </div>
                                     </form>
                                 </div>
@@ -104,7 +125,13 @@ class Career extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.filename = this.filename.bind(this);
         this.myRef = React.createRef();
+    }
+
+    filename(fname) {
+        let fileName = fname.split('/').pop().split('\\').pop();
+        return fileName
     }
 
     handleChange(e, index) {
@@ -209,6 +236,7 @@ class Career extends React.Component {
                         data={this.state.data}
                         handleSubmit={this.handleSubmit}
                         handleChange={this.handleChange}
+                        filename={this.filename}
                         career_data={this.state.career_data} />
                 </section>
                 <Contact />
