@@ -16,7 +16,6 @@ class Home extends React.Component {
 
         $(window).scroll(function () {
             var value = $(this).scrollTop();
-            console.log(value)
             if (value >= 100 && isScrolling) {
                 $("#img").fadeOut(100, function () {
                     $("#img").fadeIn(100).attr("src", scrollSrc).animate({});

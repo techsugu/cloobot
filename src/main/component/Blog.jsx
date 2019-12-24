@@ -6,6 +6,83 @@ import post_data from "../Json/post.json";
 import news_data from "../Json/tech_news.json";
 import Logo from "../../images/logo@2x.svg";
 
+
+class RecentPost extends React.Component {
+    responsive = {
+        0: { items: 1 },
+        1024: { items: 3 },
+    }
+    render() {
+        return (
+            <div className="recent_blog_slide" >
+                <AliceCarousel
+                    responsive={this.responsive}
+                    infinite={true}
+                    autoPlay={false}
+                    autoPlayInterval={3000}
+                    autoPlayDirection="rtl"
+                    buttonsDisabled={true}
+                    dotsDisabled={false}
+                    mouseDragEnabled={true}
+                    touchTrackingEnabled={true}
+                    stagePadding={this.stagePadding} >
+                    <div className="item">
+                        <div className="card">
+                            <img className="card-img" alt="text" src="../../images/Blog/customisations@2x.png" />
+                            <div className="card-body">
+                                <h5 className="card-title">Post Title</h5>
+                                <p className="card-text"> when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                <button className="btn btn-light btn-read"> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="card">
+                            <img className="card-img" alt="text" src="../../images/Blog/customisations@2x.png" />
+                            <div className="card-body">
+                                <h5 className="card-title">Post Title</h5>
+                                <p className="card-text"> when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                <button className="btn btn-light btn-read"> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="card">
+                            <img className="card-img" alt="text" src="../../images/Blog/customisations@2x.png" />
+                            <div className="card-body">
+                                <h5 className="card-title">Post Title</h5>
+                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                <button className="btn btn-light btn-read"> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="card">
+                            <img className="card-img" alt="text" src="../../images/Blog/customisations@2x.png" />
+                            <div className="card-body">
+                                <h5 className="card-title">Post Title</h5>
+                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                <button className="btn btn-light btn-read"> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="card">
+                            <img className="card-img" alt="text" src="../../images/Blog/customisations@2x.png" />
+                            <div className="card-body">
+                                <h5 className="card-title">Post Title</h5>
+                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                <button className="btn btn-light btn-read"> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </AliceCarousel>
+            </div>
+        )
+    }
+
+}
+
 class Bottom extends React.Component {
     responsive = {
         0: { items: 1 },
@@ -17,47 +94,51 @@ class Bottom extends React.Component {
                 <AliceCarousel
                     responsive={this.responsive}
                     infinite={true}
-                    autoPlay={true}
+                    autoPlay={false}
                     autoPlayInterval={3000}
                     autoPlayDirection="rtl"
                     buttonsDisabled={true}
-                    dotsDisabled={true}
+                    dotsDisabled={false}
                     mouseDragEnabled={true}
                     touchTrackingEnabled={true}
                     stagePadding={this.stagePadding} >
                     <div className="item">
                         <div className="card">
-                            <img className="card-img-top" alt="text" src="../../images/About_us/harishan-kobalasingam-8PMvB4VyVXA-unsplash.png" />
-                            <div className="card-body ">
-                                <h5 className="card-title">Post Title</h5>
-                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div className="card-img" style={{ backgroundImage: "url('../../images/Blog/blog_bg.png')" }} />
+                            <div className="card-img-overlay">
+                                <h5 className="card-title">Change your workflow</h5>
                             </div>
                         </div>
                     </div>
                     <div className="item">
                         <div className="card">
-                            <img className="card-img-top" alt="text" src="../../images/About_us/harishan-kobalasingam-8PMvB4VyVXA-unsplash.png" />
-                            <div className="card-body ">
-                                <h5 className="card-title">Post Title</h5>
-                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div className="card-img" style={{ backgroundImage: "url('../../images/Blog/blog_bg.png')" }} />
+                            <div className="card-img-overlay">
+                                <h5 className="card-title">Change your workflow</h5>
                             </div>
                         </div>
                     </div>
                     <div className="item">
                         <div className="card">
-                            <img className="card-img-top" alt="text" src="../../images/About_us/harishan-kobalasingam-8PMvB4VyVXA-unsplash.png" />
-                            <div className="card-body ">
-                                <h5 className="card-title">Post Title</h5>
-                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div className="card-img" style={{ backgroundImage: "url('../../images/Blog/blog_bg.png')" }} />
+                            <div className="card-img-overlay">
+                                <h5 className="card-title">Change your workflow</h5>
                             </div>
                         </div>
                     </div>
                     <div className="item">
                         <div className="card">
-                            <img className="card-img-top" alt="text" src="../../images/About_us/harishan-kobalasingam-8PMvB4VyVXA-unsplash.png" />
-                            <div className="card-body ">
-                                <h5 className="card-title">Post Title</h5>
-                                <p className="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div className="card-img" style={{ backgroundImage: "url('../../images/Blog/blog_bg.png')" }} />
+                            <div className="card-img-overlay">
+                                <h5 className="card-title">Change your workflow</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="card">
+                            <div className="card-img" style={{ backgroundImage: "url('../../images/Blog/blog_bg.png')" }} />
+                            <div className="card-img-overlay">
+                                <h5 className="card-title">Change your workflow</h5>
                             </div>
                         </div>
                     </div>
@@ -74,24 +155,24 @@ class SmallBlog extends React.Component {
             <div className="small_blog">
                 <div className="row">
                     <div className="col-lg-6 col-sm-12">
-                        <div class="card-horizontal d-flex align-items-center">
-                            <div class="img-square-wrapper">
-                                <img src="../../images/Blog/headway-5QgIuuBxKwM-unsplash.png" class="rounded" alt="Blog_Image" />
+                        <div className="card-horizontal d-flex align-items-center">
+                            <div className="img-square-wrapper">
+                                <img src="../../images/Blog/headway-5QgIuuBxKwM-unsplash.png" className="rounded" alt="Blog_Image" />
                             </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Post Title</h4>
-                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div className="card-body">
+                                <h4 className="card-title">Post Title</h4>
+                                <p className="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6 col-sm-12">
-                        <div class="card-horizontal d-flex align-items-center">
-                            <div class="img-square-wrapper">
-                                <img src="../../images/Blog/headway-5QgIuuBxKwM-unsplash.png" class="rounded" alt="Blog_Image" />
+                        <div className="card-horizontal d-flex align-items-center">
+                            <div className="img-square-wrapper">
+                                <img src="../../images/Blog/headway-5QgIuuBxKwM-unsplash.png" className="rounded" alt="Blog_Image" />
                             </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Post Title</h4>
-                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div className="card-body">
+                                <h4 className="card-title">Post Title</h4>
+                                <p className="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                             </div>
                         </div>
                     </div>
@@ -128,7 +209,7 @@ class LatestNews extends React.Component {
         let latestnews_data = [];
         this.props.news_data.forEach((res, i) => {
             latestnews_data.push(
-                <div className={res.auto_width ? res.auto_width + " p-0" : "col-lg-4 col-xl-4 col-sm-12"} key={res.id}>
+                <div className="p-0" key={res.id}>
                     <div className="card shadow">
                         <div className={(res.type === "horizontal") ? "card-horizontal d-flex align-items-center" : "card-vertical d-flex align-items-center"}>
                             <div className="img-square-wrapper">
@@ -137,8 +218,8 @@ class LatestNews extends React.Component {
                             <div className="card-body">
                                 <h6 className="card-subtitle mb-2">{res.tag_name}</h6>
                                 <h4 className="card-title">{res.title}</h4>
-                                <p className="card-text">{this.props.shortCharacter(res.body)}</p>
-                                <button className="btn btn-light" onClick={e => this.props.handleReadMore(e, res.id)}> Read More</button>
+                                <p className="card-text">{this.props.shortCharacter(res.body, "latest_news")}</p>
+                                <button className="btn btn-light btn-read" onClick={e => this.props.handleReadMore(e, res.id, "latest_news")}> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -146,9 +227,9 @@ class LatestNews extends React.Component {
             )
         });
         return (
-            <React.Fragment>
+            <div className="news_wrap">
                 {latestnews_data}
-            </React.Fragment>
+            </div>
         )
     }
 }
@@ -156,12 +237,13 @@ class LatestNews extends React.Component {
 class Fullblog extends React.Component {
     render() {
         let read_body = [];
-        this.props.data.forEach((ele, i) => {
+        let latest_news = this.props.news_data;
+        let blog_data = this.props.data;
+        (this.props.blogSection === "latest_news" ? latest_news : blog_data).forEach((ele, i) => {
             if (parseInt(this.props.show_id) === ele.id) {
                 read_body.push(
                     <div key={i} className="card">
-                        <div className="card-img">
-                            <img src={ele.img_url} alt={ele.title} className="img-fluid rounded" />
+                        <div className="card-img" style={{ backgroundImage: "url(" + ele.img_url + ")" }}>
                         </div>
                         <div className="card-body">
                             <h4 className="card-title">{ele.title}</h4>
@@ -175,8 +257,15 @@ class Fullblog extends React.Component {
         return (
             <div className="full_post">
                 <div className="col-lg-12 col-sm-12">
-                    <button className="btn btn-primary pro-btn btn-back" onClick={e => this.props.backToLogs(e)}>Back</button>
-                    {read_body}
+                    <div className="post_top">{read_body}</div>
+                    <div className="post_btns">
+                        <button className="btn btn-primary pro-btn btn-back"
+                            onClick={e => this.props.backToLogs(e)}> <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            Back </button>
+                        <button className="btn btn-primary pro-btn btn-back"
+                            onClick={e => this.props.backToLogs(e)}>Next <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         );
@@ -190,14 +279,16 @@ class Blog extends React.Component {
             data: post_data,
             news_data: news_data,
             show_id: "",
-            show: false
+            show: false,
+            blogSection: null
         };
         this.handleReadMore = this.handleReadMore.bind(this);
         this.backToLogs = this.backToLogs.bind(this);
     }
 
-    handleReadMore(e, id) {
+    handleReadMore(e, id, option) {
         this.setState({
+            blogSection: option,
             show_id: id,
             show: true
         });
@@ -208,10 +299,15 @@ class Blog extends React.Component {
         })
     }
 
-    shortCharacter(text) {
+    shortCharacter(text, option) {
         let value = text;
+        let limit = ""
         if (value.length) {
-            let limit = parseInt("150");
+            if (option === "blog") {
+                limit = parseInt("150");
+            } else if (option === "latest_news") {
+                limit = parseInt("75");
+            }
             value = value.length > limit ? value.substring(0, limit) + "..." : value;
         }
         return value;
@@ -230,10 +326,10 @@ class Blog extends React.Component {
                             <div className="card-body">
                                 <h6 className="card-subtitle mb-2">{res.tag_name}</h6>
                                 <h4 className="card-title">{res.title}</h4>
-                                <p className="card-text">{this.shortCharacter(res.body)}</p>
+                                <p className="card-text">{this.shortCharacter(res.body, "blog")}</p>
+                                <button className="btn btn-light btn-read" onClick={e => this.handleReadMore(e, res.id, "blog")}> Read More <i className="fa fa-angle-double-right" aria-hidden="true"></i></button>
                             </div>
                         </div>
-                        <button className="btn btn-light" onClick={e => this.handleReadMore(e, res.id)}> Read More</button>
                     </div>
                 </div>
             )
@@ -257,14 +353,32 @@ class Blog extends React.Component {
                 </section>
                 <section className="pro-blog_list">
                     {this.state.show ?
-                        <div className="container">
-                            <div className="row">
-                                <Fullblog
-                                    show_id={this.state.show_id}
-                                    backToLogs={this.backToLogs}
-                                    data={this.state.data} />
+                        <React.Fragment>
+                            <div className="container">
+                                <div className="row">
+                                    <Fullblog
+                                        show_id={this.state.show_id}
+                                        backToLogs={this.backToLogs}
+                                        data={this.state.data}
+                                        news_data={this.state.news_data}
+                                        blogSection={this.state.blogSection}
+                                    />
+                                </div>
                             </div>
-                        </div> :
+                            <div className="recent_post">
+                                <div className="container">
+                                    <div className="row no-gutters">
+                                        <div className="col-lg-12 col-sm-12">
+                                            <h3 className="post_title">
+                                                Recent Posts
+                                            </h3>
+                                            <RecentPost />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </React.Fragment>
+                        :
                         <React.Fragment>
                             <div className="container">
                                 <div className="pro-blog-inner">
@@ -284,6 +398,7 @@ class Blog extends React.Component {
                                                 news_data={this.state.news_data}
                                                 shortCharacter={this.shortCharacter}
                                                 handleReadMore={this.handleReadMore}
+
                                             />
                                         </div>
                                     </div>

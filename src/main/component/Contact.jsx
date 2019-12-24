@@ -80,8 +80,9 @@ class Contact extends React.Component {
                             </div>
                         </div>
                         <div className="col-xl-7 col-lg-7 col-sm-12 p-lg-3 light">
-                            {this.state.show ? "" :
-                                <form className="card contact-right">
+                            {this.state.show ?
+                                <div className="map" data-aos="flip-left" data-aos-duration="800">Map</div> :
+                                <form className="card contact-right" data-aos="slide-up" data-aos-duration="800">
                                     <div className="card-body">
                                         <h5 className="card-title">leave us message</h5>
                                         <p className="card-text">Schedule a call to learn about what the Encompass platform can do for your business.</p>
@@ -97,7 +98,7 @@ class Contact extends React.Component {
                                             <div className="form-group col-md-6">
                                                 <input type="email" className="form-control" name="email" id="email" placeholder="Email" onChange={e => this.handleChange(e)} />
                                             </div>
-                                            <div className="form-group col-md-6">
+                                            <div className="form-group col-md-6" >
                                                 <input type="phone" className="form-control" name="phone" id="phone" placeholder="Phone" onChange={e => this.handleChange(e)} />
                                             </div>
                                         </div>
