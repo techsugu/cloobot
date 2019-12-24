@@ -1,4 +1,5 @@
 import React from "react";
+import Particle from "../component/Particlebg";
 import Testimonial from "./Testimonial";
 import Contact from "../component/Contact";
 
@@ -23,13 +24,14 @@ class Services extends React.Component {
                     </div>
                 </div>
                 <div className="pro-service-list" id="service_list">
+                    <div className="particle_js" id="particle_js"><Particle /></div>
                     <div className="container">
                         <div className="d-flex align-items-center mt-lg-4 mb-lg-4">
                             <div className="card service_1">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-3 text-center">
-                                        <div className="service_img">
-                                            <img src="../../images/Services/service1.svg" className="img-fluid cust_img" alt="service" data-aos="slide-up" data-aos-duration="800" />
+                                        <div className="service_img" data-aos="slide-up" data-aos-duration="800">
+                                            <img src="../../images/Services/service1.svg" className="img-fluid cust_img" alt="service" />
                                         </div>
                                     </div>
                                     <div className="col-md-9">
@@ -51,8 +53,8 @@ class Services extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-md-3 text-center">
-                                        <div className="service_img">
-                                            <img src="../../images/Services/service2.svg" className="img-fluid cust_img" alt="service" data-aos="slide-down" data-aos-duration="800" />
+                                        <div className="service_img" data-aos="slide-down" data-aos-duration="800">
+                                            <img src="../../images/Services/service2.svg" className="img-fluid cust_img" alt="service" />
                                         </div>
                                     </div>
                                 </div>
@@ -62,8 +64,8 @@ class Services extends React.Component {
                             <div className="card service_3">
                                 <div className="row no-gutters align-items-center">
                                     <div className="col-md-3 text-center">
-                                        <div className="service_img">
-                                            <img src="../../images/Services/service3.svg" className="img-fluid cust_img" alt="service" data-aos="slide-up" data-aos-duration="800" />
+                                        <div className="service_img" data-aos="slide-up" data-aos-duration="800">
+                                            <img src="../../images/Services/service3.svg" className="img-fluid cust_img" alt="service" />
                                         </div>
                                     </div>
                                     <div className="col-md-9">
@@ -85,8 +87,8 @@ class Services extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-md-3 text-center">
-                                        <div className="service_img">
-                                            <img src="../../images/Services/service4.svg" className="img-fluid cust_img" alt="service" data-aos="slide-down" data-aos-duration="800" />
+                                        <div className="service_img" data-aos="slide-down" data-aos-duration="800">
+                                            <img src="../../images/Services/service4.svg" className="img-fluid cust_img" alt="service" />
                                         </div>
                                     </div>
                                 </div>

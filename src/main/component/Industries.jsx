@@ -28,7 +28,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-2 d-flex align-items-center">
+                <section className="pro-industries-2 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-6 col-lg-6 col-sm-12 p-0">
@@ -46,7 +46,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-3 d-flex align-items-center">
+                <section className="pro-industries-3 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-7 col-lg-7 col-sm-12">
@@ -64,7 +64,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-4 d-flex align-items-center">
+                <section className="pro-industries-4 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-6 col-lg-6 col-sm-12 p-0">
@@ -82,7 +82,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-5 d-flex align-items-center">
+                <section className="pro-industries-5 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-7 col-lg-7 col-sm-12">
@@ -100,7 +100,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-6 d-flex align-items-center">
+                <section className="pro-industries-6 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-6 col-lg-6 col-sm-12 p-0">
@@ -118,7 +118,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-7 d-flex align-items-center">
+                <section className="pro-industries-7 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-7 col-lg-7 col-sm-12">
@@ -136,7 +136,7 @@ class Industries extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="pro-industries-8 d-flex align-items-center">
+                <section className="pro-industries-8 d-flex align-items-center" data-aos="slide-up" data-aos-duration="1000">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-6 col-lg-6 col-sm-12 p-0">
