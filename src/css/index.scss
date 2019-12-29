@@ -23,6 +23,7 @@ body {
       position: fixed;
       top: 0;
       left: 0;
+      z-index: 99;
       div {
         @include for-phone-only {
           height: 100%;
@@ -141,6 +142,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 99;
 
       div {
         @include for-phone-only {
@@ -150,7 +152,7 @@ body {
       }
     }
     .pro-home {
-      background: #021531;
+      background: #031330;
       height: 100vh;
       overflow: hidden;
       min-height: 680px;
@@ -168,10 +170,10 @@ body {
         z-index: 10;
         .circle_bg {
           width: 500px;
-          position: relative;
-          z-index: 10;
-          background-color: #021531;
-          border-radius: 100%;
+          // position: relative;
+          // z-index: 10;
+          // background-color: #021531;
+          // border-radius: 100%;
         }
         .img_sec {
           position: absolute;

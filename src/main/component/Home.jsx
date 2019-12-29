@@ -47,49 +47,7 @@ class Home extends React.Component {
                             </div>
                             <div className="col-xl-6 col-lg-6 col-sm-12">
                                 <div className="pro-home-right text-center">
-                                    <img src="../../images/Home/bg_circle.png" className="img-fluid circle_bg" alt="circle" />
-                                    <span className="img_sec d-flex align-items-center" id="img_sec">
-                                        <img src="../../images/Home/lap.png" className="img-fluid laptop" id="img" alt="laptop" />
-                                    </span>
-                                    <div className="home_circle">
-                                        <span className="circle1">
-                                            <img src="../../images/Home/circle1.png" className="img-fluid circle1_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle2">
-                                            <img src="../../images/Home/circle2.png" className="img-fluid circle2_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle3">
-                                            <img src="../../images/Home/circle3.png" className="img-fluid circle3_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle4">
-                                            <img src="../../images/Home/circle4.png" className="img-fluid circle4_img" id="img" alt="laptop" />
-                                        </span>
-                                    </div>
-                                    <div className="home_circle_inner">
-                                        <span className="circle1_inner">
-                                            <img src="../../images/Home/circle1_inner.png" className="img-fluid circle1__inner_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle2_inner">
-                                            <img src="../../images/Home/circle2_inner.png" className="img-fluid circle2__inner_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle3_inner">
-                                            <img src="../../images/Home/circle3_inner.png" className="img-fluid circle3__inner_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle4_inner">
-                                            <img src="../../images/Home/circle4_inner.png" className="img-fluid circle4__inner_img" id="img" alt="laptop" />
-                                        </span>
-                                    </div>
-                                    <div className="home_circle_small">
-                                        <span className="circle1_small">
-                                            <img src="../../images/Home/circle_small1.png" className="img-fluid circle1__small_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle2_small">
-                                            <img src="../../images/Home/circle_small2.png" className="img-fluid circle2__small_img" id="img" alt="laptop" />
-                                        </span>
-                                        <span className="circle3_small">
-                                            <img src="../../images/Home/circle_small3.png" className="img-fluid circle3__small_img" id="img" alt="laptop" />
-                                        </span>
-                                    </div>
+                                    <img src="../../images/Home/landing_page.gif" className="img-fluid circle_bg" alt="circle" />
                                 </div>
                             </div>
                         </div>
