@@ -47,6 +47,16 @@ class Globalmap extends React.Component {
         document.getElementById("Path_5-4").setAttribute("fill", "rgb(109, 205, 247)");     
         document.getElementById("Path_6-4").setAttribute("fill", "rgb(109, 205, 247)");     
         document.getElementById("Path_7-4").setAttribute("fill", "rgb(109, 205, 247)"); 
+      }
+      else if(e.target.id === "Ellipse_505") {
+        e.currentTarget.setAttribute('cy', '100');
+        e.currentTarget.setAttribute('r', '100');
+        e.currentTarget.setAttribute('fill', '#fff');
+        document.getElementById("Path_32-4").setAttribute("fill", "#194D99");      
+        document.getElementById("Path_42-4").setAttribute("fill", "rgb(109, 205, 247)");     
+        document.getElementById("Path_52-4").setAttribute("fill", "rgb(109, 205, 247)");     
+        document.getElementById("Path_62-4").setAttribute("fill", "rgb(109, 205, 247)");     
+        document.getElementById("Path_72-4").setAttribute("fill", "rgb(109, 205, 247)"); 
       }      
     }
 
@@ -87,6 +97,16 @@ class Globalmap extends React.Component {
         document.getElementById("Path_5-4").setAttribute("fill", "#fff");     
         document.getElementById("Path_6-4").setAttribute("fill", "#fff");     
         document.getElementById("Path_7-4").setAttribute("fill", "#fff"); 
+      }
+      else if(e.target.id === "Ellipse_505") {
+        e.currentTarget.setAttribute('cy', '40');
+        e.currentTarget.setAttribute('r', '40');
+        e.currentTarget.setAttribute('fill', '#06ff59');
+        document.getElementById("Path_32-4").setAttribute("fill", "#fff");      
+        document.getElementById("Path_42-4").setAttribute("fill", "#fff");     
+        document.getElementById("Path_52-4").setAttribute("fill", "#fff");     
+        document.getElementById("Path_62-4").setAttribute("fill", "#fff");     
+        document.getElementById("Path_72-4").setAttribute("fill", "#fff"); 
       }
     }
 
@@ -141,7 +161,72 @@ class Globalmap extends React.Component {
     <circle id="Ellipse_503" data-name="Ellipse 503" cx="23" cy="23" r="23" transform="translate(430 2124)" fill="#194d99"/>
     <circle id="Ellipse_504" data-name="Ellipse 504" cx="23" cy="23" r="23" transform="translate(500 2159)" fill="#194d99"/>
     <circle id="Ellipse_547" data-name="Ellipse 547" cx="6.5" cy="6.5" r="6.5" transform="translate(560 2207)" fill="#194d99"/>
-    <circle id="Ellipse_505" data-name="Ellipse 505" cx="40" cy="40" r="40" transform="translate(547 2107)" fill="#194d99"/>
+    <defs>
+      <filter id="Ellipse_505" x="-175" y="-50" width="500" height="500" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="20" result="blur"/>
+        <feFlood floodColor="#06f455"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+      </filter>
+    </defs>
+    <g id="Component_19_1" data-name="Component 19 – 1" transform="translate(547 2107)" filter="url(#Ellipse_505)">
+    <circle id="Ellipse_505" data-name="Ellipse 505" cx="40" cy="40" r="40" fill="#06ff59"
+      style={{transition: "ease-in 0.2s"}}
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)}
+      />
+      <text id="_United_Kingdom_EC1V_2NX_2" 
+      data-name=" United Kingdom Cloobot TechLabs UK Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX" 
+      transform="translate(12 13)" 
+      fill="#212121" 
+      fontSize="20" 
+      fontFamily="Lato-Regular, Lato" 
+      letterSpacing="0.055em"
+      textAnchor="middle" y="40">
+      <tspan x="20" dy="25">Dubai</tspan>
+      <tspan x="20" dy="25">Cloobot TechLabs</tspan>
+      </text>
+      <g id="Group_481" data-name="Group 481" transform="translate(-1234.413 -236.5)">
+        <g id="Group_373-4" data-name="Group 373" transform="translate(1252.894 262.754)">
+          <g id="Group_11-4" data-name="Group 11">
+            <g id="Group_10-4" data-name="Group 10">
+              <path id="Path_42-4" data-name="Path 4" d="M498.334,38.054h0a.228.228,0,1,0-.244-.209A.228.228,0,0,0,498.335,38.054Z" transform="translate(-498.09 -37.599)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_374-4" data-name="Group 374" transform="translate(1253.637 263.703)">
+          <g id="Group_14-4" data-name="Group 14">
+            <g id="Group_13-4" data-name="Group 13">
+              <path id="Path_52-4" data-name="Path 5" d="M499.938,40.245h0a.456.456,0,1,0-.49-.419A.456.456,0,0,0,499.94,40.245Z" transform="translate(-499.448 -39.335)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_375-4" data-name="Group 375" transform="translate(1254.98 264.767)">
+          <g id="Group_17-4" data-name="Group 17">
+            <g id="Group_16-4" data-name="Group 16">
+              <path id="Path_62-4" data-name="Path 6" d="M502.641,42.647h0a.683.683,0,1,0-.734-.627A.684.684,0,0,0,502.643,42.647Z" transform="translate(-501.906 -41.283)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_376-4" data-name="Group 376" transform="translate(1257.203 265.45)">
+          <g id="Group_20-4" data-name="Group 20">
+            <g id="Group_19-4" data-name="Group 19">
+              <path id="Path_72-4" data-name="Path 7" d="M506.954,44.352h0a.911.911,0,1,0-.979-.837A.911.911,0,0,0,506.956,44.352Z" transform="translate(-505.975 -42.533)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_377-4" data-name="Group 377" transform="translate(1240.833 251)">
+          <g id="Group_8-4" data-name="Group 8">
+            <g id="Group_7-4" data-name="Group 7">
+              <path id="Path_32-4" data-name="Path 3" d="M539.461,34.48c0,.22,0,.443-.009.665l-.041.659-.021.329-.011.165-.02.163-.078.65c-.048.425-.128.885-.217,1.331a18.035,18.035,0,0,1-1.883,5.067,19.167,19.167,0,0,1-3.188,4.269,20.167,20.167,0,0,1-4.2,3.25,18.216,18.216,0,0,1-2.4,1.171,18.636,18.636,0,0,1-2.563.816,17.343,17.343,0,0,1-2.64.425l-.028,0h-.009a2.736,2.736,0,0,1-.491-5.449,12.848,12.848,0,0,0,1.828-.344,14.079,14.079,0,0,0,6.432-3.846,13.382,13.382,0,0,0,3.524-6.516c.058-.3.111-.59.145-.924l.062-.483.015-.121.007-.122.016-.24.033-.48c.01-.16,0-.319.008-.477s0-.319,0-.477l-.026-.473a13.966,13.966,0,0,0-.234-1.851c-.031-.151-.072-.3-.106-.449s-.064-.3-.115-.446c-.094-.292-.17-.59-.288-.872a12.361,12.361,0,0,0-4.526-5.763,14.917,14.917,0,0,0-3.4-1.788c-.3-.122-.609-.211-.915-.315l-.467-.131c-.079-.02-.155-.044-.234-.064l-.235-.053a13.52,13.52,0,0,0-1.9-.315l-.474-.042-.473-.018c-.15-.01-.334,0-.5,0s-.347,0-.518,0c-.687.018-1.364.057-2.025.134a17.168,17.168,0,0,0-1.923.337,12.653,12.653,0,0,0-1.8.591,11.587,11.587,0,0,0-1.686.863c-.272.171-.543.346-.809.541-.136.092-.264.192-.391.291s-.257.195-.383.3-.254.206-.377.319l-.371.334c-.241.234-.488.462-.72.713s-.465.5-.694.756c-.115.129-.223.265-.335.4s-.224.265-.331.4a32.169,32.169,0,0,0-2.4,3.512c-.731,1.241-1.394,2.528-2.013,3.865-.324.706-.675,1.437-1.049,2.148s-.776,1.415-1.2,2.1-.867,1.355-1.331,2.008c-.112.158-.241.34-.37.509s-.26.336-.393.5c-.266.326-.543.644-.828.952a16.434,16.434,0,0,1-3.975,3.183,12.76,12.76,0,0,1-1.18.579,12.328,12.328,0,0,1-1.254.454,10.194,10.194,0,0,1-2.66.422,10.985,10.985,0,0,1-2.622-.257,13.265,13.265,0,0,1-2.446-.784,13.737,13.737,0,0,1-4.2-2.821,11.926,11.926,0,0,1-2.788-4.252,11.793,11.793,0,0,1-.632-2.478,12.407,12.407,0,0,1-.1-2.538,12.035,12.035,0,0,1,1.38-4.863,12.513,12.513,0,0,1,3.207-3.893c.167-.128.332-.262.5-.387s.344-.246.523-.36a12.37,12.37,0,0,1,1.1-.635c.19-.094.378-.193.575-.275s.388-.174.589-.248l.3-.112.3-.1c.1-.032.2-.066.3-.1l.31-.084a11.25,11.25,0,0,1,2.543-.36,12.47,12.47,0,0,1,2.516.191,10.266,10.266,0,0,1,2.46.775,8.19,8.19,0,0,1,2.165,1.483,7.6,7.6,0,0,1,1.538,2.093,8.138,8.138,0,0,1,.5,1.241.227.227,0,0,1-.01.164l-.7,1.521a.227.227,0,0,1-.415-.006c-.178-.424-.394-.919-.489-1.111a8.112,8.112,0,0,0-.507-.882,7.3,7.3,0,0,0-.611-.781,5.925,5.925,0,0,0-.713-.66,6.271,6.271,0,0,0-1.681-.951,8.007,8.007,0,0,0-1.924-.472c-.334-.038-.671-.068-1.012-.076s-.687,0-1.026.015a9.446,9.446,0,0,0-1.963.335l-.241.066c-.08.025-.159.053-.238.079l-.239.08-.234.092c-.158.055-.312.124-.466.192s-.3.143-.456.217c-.3.15-.592.32-.879.5-.144.089-.281.187-.422.28s-.272.2-.41.3a10.239,10.239,0,0,0-2.654,3.039,8.889,8.889,0,0,0-1.155,3.84,8.71,8.71,0,0,0,.667,3.939,9.352,9.352,0,0,0,2.316,3.24,10.662,10.662,0,0,0,1.616,1.213,10.4,10.4,0,0,0,3.744,1.4c.161.033.325.046.486.068s.324.027.485.039a7.9,7.9,0,0,0,.952-.01,7.036,7.036,0,0,0,1.823-.384,8.755,8.755,0,0,0,1.719-.851,12.992,12.992,0,0,0,2.979-2.689c.219-.262.428-.533.628-.809.1-.137.2-.277.289-.416s.18-.273.278-.432q.578-.916,1.09-1.866t.96-1.926c.3-.655.572-1.314.845-2.011a39.5,39.5,0,0,1,4.511-8.523c.116-.169.242-.335.367-.5s.247-.332.378-.5c.264-.325.522-.653.8-.968s.568-.629.858-.938l.456-.454c.153-.153.318-.3.474-.443s.325-.291.494-.432.336-.281.509-.411c.34-.27.7-.525,1.06-.773a16.48,16.48,0,0,1,2.325-1.315,17.842,17.842,0,0,1,2.5-.938,21.494,21.494,0,0,1,2.555-.557c.85-.127,1.692-.2,2.526-.251.209-.012.416-.015.625-.023s.407-.018.636-.014l.67,0,.665.037a20.276,20.276,0,0,1,9.874,3.414c.182.126.361.257.542.387l.271.195c.089.066.175.138.263.207l.521.42.5.446.249.224.24.238.477.477.454.5.224.252.213.264.424.531.4.554.2.28.182.288.359.58.328.6.161.3c.052.1.1.207.147.31l.287.621c.09.209.169.424.253.635.176.421.3.858.443,1.292.074.217.118.438.177.658s.113.441.161.661a18.9,18.9,0,0,1,.36,2.675l.037.67C539.464,34.037,539.46,34.258,539.461,34.48Z" transform="translate(-476.02 -16.091)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+
+
     <circle id="Ellipse_538" data-name="Ellipse 538" cx="28" cy="28" r="28" transform="translate(455 1849)" fill="#194d99"/>
     <circle id="Ellipse_539" data-name="Ellipse 539" cx="12" cy="12" r="12" transform="translate(523 1857)" fill="#194d99"/>
     <circle id="Ellipse_555" data-name="Ellipse 555" cx="7.5" cy="7.5" r="7.5" transform="translate(419 1893)" fill="#194d99"/>
@@ -231,7 +316,6 @@ class Globalmap extends React.Component {
     <circle id="Ellipse_549" data-name="Ellipse 549" cx="65" cy="65" r="65" transform="translate(297 2015)" fill="#194d99"/>
     <circle id="Ellipse_570" data-name="Ellipse 570" cx="23" cy="23" r="23" transform="translate(176 2045)" fill="#6dcdf7"/>
     <circle id="Ellipse_573" data-name="Ellipse 573" cx="32" cy="32" r="32" transform="translate(209 2091)" fill="#6dcdf7"/>
-    <circle id="Ellipse_546" data-name="Ellipse 546" cx="11.5" cy="11.5" r="11.5" transform="translate(620 2177)" fill="#6dcdf7"/>
     <circle id="Ellipse_534" data-name="Ellipse 534" cx="34.5" cy="34.5" r="34.5" transform="translate(585 1849)" fill="#6dcdf7"/>
     <circle id="Ellipse_637" data-name="Ellipse 637" cx="43.5" cy="43.5" r="43.5" transform="translate(451 2032)" fill="#6dcdf7"/>
     <circle id="Ellipse_535" data-name="Ellipse 535" cx="24.5" cy="24.5" r="24.5" transform="translate(660 1846)" fill="#6dcdf7"/>
@@ -311,15 +395,16 @@ class Globalmap extends React.Component {
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-    <g id="Component_20_1" data-name="Component 20 – 1" transform="translate(358 2175)" filter="url(#Ellipse_636)">
+    <g id="Component_20_1" data-name="Component 20 – 1" transform="translate(358 2175)" filter="url(#Ellipse_636)" style={{transition: "ease-in 0.2s"}}
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)}>
       <circle id="Ellipse_636" 
         data-name="Ellipse 636" 
         cx="65" cy="65" r="65" 
         fill="#06ff59" 
         style={{transition: "ease-in 0.2s"}}
         onMouseOver={e =>this.changeCircle(e)}
-        onMouseOut={e =>this.changeCircleNormal(e)} 
-        />
+        onMouseOut={e =>this.changeCircleNormal(e)} />
       <g id="Group_378" data-name="Group 378" transform="translate(-1226.338 -215.245)" >
         <g id="Group_373" data-name="Group 373" transform="translate(1284.531 293.584)">
           <g id="Group_11" data-name="Group 11">
@@ -382,9 +467,15 @@ class Globalmap extends React.Component {
         <feComposite in="SourceGraphic"/>
       </filter>
     </defs>
-    <g id="Component_17_1" data-name="Component 17 – 1" transform="translate(1027 2133)" filter="url(#Ellipse_638)">
+    <g id="Component_17_1" data-name="Component 17 – 1" 
+          transform="translate(1027 2133)" 
+          filter="url(#Ellipse_638)" 
+          style={{transition: "ease-in 0.2s"}}
+          onMouseOver={e =>this.changeCircle(e)}
+          onMouseOut={e =>this.changeCircleNormal(e)}>
       <g id="Group_382" data-name="Group 382" transform="translate(13 13)">
-        <circle id="Ellipse_638" data-name="Ellipse 638" cx="54.5" cy="54.5" r="54.5" transform="translate(-13 -13)" fill="#06ff59" style={{transition: "ease-in 0.2s"}}
+        <circle id="Ellipse_638" data-name="Ellipse 638" cx="54.5" cy="54.5" r="54.5" transform="translate(-13 -13)" fill="#06ff59" 
+          style={{transition: "ease-in 0.2s"}}
           onMouseOver={e =>this.changeCircle(e)}
           onMouseOut={e =>this.changeCircleNormal(e)}
         />
@@ -452,9 +543,14 @@ class Globalmap extends React.Component {
       </filter>
     </defs>
 
-    <g id="Component_18_1" data-name="Component 18 – 1" transform="translate(1272 2365)" filter="url(#Path_4680)">
+    <g id="Component_18_1" data-name="Component 18 – 1" 
+        transform="translate(1272 2365)" 
+        style={{transition: "ease-in 0.2s"}}
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)}
+        filter="url(#Path_4680)">
       <circle id="Path_4680" data-name="Path 4680" cx="22" cy="22" r="22" fill="#06ff59"
-      style={{transition: "ease-in 0.2s"}}
+        style={{transition: "ease-in 0.2s"}}
         onMouseOver={e =>this.changeCircle(e)}
         onMouseOut={e =>this.changeCircleNormal(e)}
       />
@@ -516,12 +612,14 @@ class Globalmap extends React.Component {
         <feComposite in="SourceGraphic"/>
       </filter>
     </defs>
-    <g id="Component_19_1" data-name="Component 19 – 1" transform="translate(911 2116)" filter="url(#Ellipse_640)">
-      <circle id="Ellipse_640" data-name="Ellipse 640" cx="22" cy="22" r="22" fill="#06ff59"
-      style={{transition: "ease-in 0.2s"}}
+    <g id="Component_19_1" data-name="Component 19 – 1" transform="translate(911 2116)" filter="url(#Ellipse_640)" 
+    style={{transition: "ease-in 0.2s"}}
         onMouseOver={e =>this.changeCircle(e)}
-        onMouseOut={e =>this.changeCircleNormal(e)}
-      />
+        onMouseOut={e =>this.changeCircleNormal(e)}>
+      <circle id="Ellipse_640" data-name="Ellipse 640" cx="22" cy="22" r="22" fill="#06ff59"
+        style={{transition: "ease-in 0.2s"}}
+        onMouseOver={e =>this.changeCircle(e)}
+        onMouseOut={e =>this.changeCircleNormal(e)} />
       <text id="_United_Kingdom_EC1V_2NX_2" 
       data-name=" United Kingdom Cloobot TechLabs UK Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX" 
       transform="translate(12 13)" 
@@ -577,8 +675,7 @@ class Globalmap extends React.Component {
       </g>
     </g>
   </g>
-</svg> )
-    }
+</svg> )}
 }
 
 class Gallery extends React.Component {
@@ -618,7 +715,7 @@ class Gallery extends React.Component {
                     </div>
                 </div>
                 <div className="item">
-                    <div className="card inner">
+                    <div className="card">
                         <img className="card-img-top" alt="text" src="../../images/About_us/reza-biazar-eSjmZW97cH8-unsplash.png" />
                         <div className="card-body ">
                             <h5 className="card-title">Name Surname</h5>
@@ -693,6 +790,23 @@ class Gallery extends React.Component {
 }
 
 class About extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hideNav:null
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+  }
+
+  resize() {
+    this.setState({
+        hideNav: window.innerWidth <= 768
+    });
+}
     render() {
         return (
             <React.Fragment>

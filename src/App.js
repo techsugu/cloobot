@@ -13,7 +13,7 @@ class App extends React.Component {
     };
   }
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: true }), 10000);
+    setTimeout(() => this.setState({ loading: true }), 7000);
   }
 
   render() {
@@ -27,7 +27,7 @@ class App extends React.Component {
           </div> :
           <div className="loder">
             <div className="particle_js" id="particle_js"><Particle /></div>
-            <h3>Loading...</h3>
+            <img src="../../images/preloader.gif" alt="preloader" className="img-fluid" />
           </div>}
       </span>
     );
