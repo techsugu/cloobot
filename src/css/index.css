@@ -16,12 +16,7 @@ body .loder {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background: #2c2d44;
-  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
-}
-
-body .loder h3 {
-  color: white;
+  background: #030303;
 }
 
 body .loder #particle_js {
@@ -30,7 +25,8 @@ body .loder #particle_js {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1;
+  opacity: 0.5;
 }
 
 @media (max-width: 576px) {
@@ -38,6 +34,11 @@ body .loder #particle_js {
     height: 100%;
     width: 100%;
   }
+}
+
+body .loder .loder_img {
+  position: relative;
+  z-index: 999;
 }
 
 body .pro .btn {
@@ -179,6 +180,7 @@ body .pro #particle_js {
   top: 0;
   left: 0;
   z-index: 99;
+  opacity: 0.5;
 }
 
 @media (max-width: 576px) {
@@ -189,7 +191,7 @@ body .pro #particle_js {
 }
 
 body .pro .pro-home {
-  background: #031330;
+  background: #031333;
   height: 100vh;
   overflow: hidden;
   min-height: 680px;
@@ -1545,7 +1547,17 @@ body .pro .pro-about-global .pro-map .title {
   }
 }
 
+body .pro .pro-about-global .pro-map svg {
+  cursor: pointer;
+}
+
 body .pro .pro-about-global .pro-map svg text {
+  display: none;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+body .pro .pro-about-global .pro-map svg defs:hover + g text {
   display: none;
 }
 
@@ -1609,7 +1621,7 @@ body .pro .pro-about-2 .pro-about-details .pro-about-descriptions {
 
 body .pro .pro-about-team {
   background: white;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   min-height: 680px;
   background-image: url("../images/Home/Intersection.png");
@@ -1717,6 +1729,62 @@ body .pro .pro-about-team .alice-carousel .alice-carousel__next-btn .alice-carou
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 40px;
   -webkit-text-stroke: 3px white;
+}
+
+body .pro .pro-about-team .slick-slider .slick-arrow.slick-prev {
+  display: none !important;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list {
+  width: 100%;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 180px !important;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide.slick-active.slick-center.slick-current {
+  width: 250px !important;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide .card {
+  border: 0;
+  border-radius: 0;
+  background-color: #0b0b0b;
+  color: white;
+  margin: 0px 20px;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide .card .card-body {
+  padding: 10px;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide .card .card-body .card-title {
+  font-weight: 400;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide .card .card-body .card-subtitle {
+  font-size: 12px;
+  color: #efefef;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide .card .card-body .card-text {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+body .pro .pro-about-team .slick-slider .slick-list .slick-track .slick-slide .card .card-img-top {
+  border-radius: 0;
 }
 
 body .pro .pro-about-team .pro-card {

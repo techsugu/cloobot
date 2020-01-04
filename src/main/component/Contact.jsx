@@ -34,6 +34,13 @@ class Contact extends React.Component {
         });
     }
 
+    componentDidMount() {
+        setTimeout(
+            function () {
+                this.setState({ show: false });
+            }.bind(this), 3000);
+    }
+
     render() {
         return (
             <div className="pro-contact d-flex align-items-center">
@@ -79,10 +86,10 @@ class Contact extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-7 col-lg-7 col-sm-12 p-lg-3 light">
+                        <div className="col-xl-7 col-lg-7 col-sm-12 p-lg-3 light" data-aos="slide-up" data-aos-duration="800">
                             {this.state.show ?
-                                <div className="map" data-aos="flip-left" data-aos-duration="800">Map</div> :
-                                <form className="card contact-right" data-aos="slide-up" data-aos-duration="800">
+                                <div className="map"></div> :
+                                <form className="card contact-right">
                                     <div className="card-body">
                                         <h5 className="card-title">leave us message</h5>
                                         <p className="card-text">Schedule a call to learn about what the Encompass platform can do for your business.</p>
