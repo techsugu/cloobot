@@ -1628,6 +1628,7 @@ body .pro .pro-about-team {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
+  padding: 5% 0;
 }
 
 @media (max-width: 576px) {
@@ -1647,6 +1648,12 @@ body .pro .pro-about-team .team-title {
 @media (max-width: 576px) {
   body .pro .pro-about-team .team-title {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  body .pro .pro-about-team .alice-carousel {
+    height: 400px;
   }
 }
 
@@ -1685,7 +1692,7 @@ body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carous
 body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .item .card {
   width: 175px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 @media (max-width: 576px) {
@@ -1694,20 +1701,24 @@ body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carous
   }
 }
 
-body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .item .card.inner {
-  width: 220px;
-  margin-top: 0;
+body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .item .card:hover {
+  width: 200px;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  height: 360px;
 }
 
-@media (max-width: 576px) {
-  body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .item .card.inner {
-    width: auto;
-  }
+body .pro .pro-about-team .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .item .card:not(:hover) {
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 body .pro .pro-about-team .alice-carousel .alice-carousel__prev-btn .alice-carousel__prev-btn-wrapper .alice-carousel__prev-btn-item {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 0px;
+  display: initial;
 }
 
 body .pro .pro-about-team .alice-carousel .alice-carousel__prev-btn .alice-carousel__prev-btn-wrapper .alice-carousel__prev-btn-item span:after {
@@ -1720,7 +1731,8 @@ body .pro .pro-about-team .alice-carousel .alice-carousel__prev-btn .alice-carou
 
 body .pro .pro-about-team .alice-carousel .alice-carousel__next-btn .alice-carousel__next-btn-wrapper .alice-carousel__next-btn-item {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 0px;
+  display: initial;
 }
 
 body .pro .pro-about-team .alice-carousel .alice-carousel__next-btn .alice-carousel__next-btn-wrapper .alice-carousel__next-btn-item span:after {
