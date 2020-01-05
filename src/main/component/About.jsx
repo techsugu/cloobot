@@ -864,7 +864,7 @@ class About extends React.Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-xl-12 col-lg-12 col-sm-12">
+                            <div className="col-xl-12 col-lg-12 col-sm-12 p-lg-0">
                                 <Gallery />
                             </div>
                         </div>

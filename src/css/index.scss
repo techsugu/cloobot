@@ -1346,6 +1346,7 @@ body {
       background-repeat: no-repeat;
       background-position: top left;
       background-size: cover;
+      padding: 5% 0;
       @include for-phone-only {
         background: none;
       }
@@ -1360,6 +1361,9 @@ body {
         }
       }
       .alice-carousel {
+        @include for-tablet-landscape-up {
+          height: 400px;
+        }
         .alice-carousel__wrapper {
           .alice-carousel__stage {
             .alice-carousel__stage-item {
@@ -1394,16 +1398,18 @@ body {
                 .card {
                   width: 175px;
                   margin: 0 auto;
-                  margin-top: 15px;
+                  margin-top: 25px;
                   @include for-phone-only {
                     width: auto;
                   }
-                  &.inner {
-                    width: 220px;
-                    margin-top: 0;
-                    @include for-phone-only {
-                      width: auto;
-                    }
+                  &:hover {
+                    width: 200px;
+                    transition: ease-in-out 0.2s;
+                    transform: scale(1.2);
+                    height: 360px;
+                  }
+                  &:not(:hover) {
+                    transition: ease-in-out 0.2s;
                   }
                 }
               }
@@ -1414,7 +1420,8 @@ body {
           .alice-carousel__prev-btn-wrapper {
             .alice-carousel__prev-btn-item {
               margin-bottom: 0;
-              margin-top: 20px;
+              margin-top: 0px;
+              display: initial;
               span {
                 &:after {
                   content: "\f190";
@@ -1431,7 +1438,8 @@ body {
           .alice-carousel__next-btn-wrapper {
             .alice-carousel__next-btn-item {
               margin-bottom: 0;
-              margin-top: 20px;
+              margin-top: 0px;
+              display: initial;
               span {
                 &:after {
                   content: "\f18e";
@@ -1444,6 +1452,16 @@ body {
             }
           }
         }
+        // .alice-carousel__prev-btn,
+        // .alice-carousel__next-btn {
+        //   position: absolute;
+        //   bottom: 0;
+        //   left: 47%;
+        //   right: 0;
+        //   top: 100%;
+        //   width: 75px;
+        //   padding: 0;
+        // }
       }
 
       .slick-slider {
