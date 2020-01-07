@@ -1555,26 +1555,50 @@ body .pro .pro-about-global .pro-map svg text {
   display: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
+  -webkit-transition-delay: 10s;
+          transition-delay: 10s;
 }
 
 body .pro .pro-about-global .pro-map svg defs:hover + g text {
   display: none;
 }
 
-body .pro .pro-about-global .pro-map svg g#Component_17_1:hover text {
+body .pro .pro-about-global .pro-map svg g#Component_17_1 circle:hover + text {
   display: block;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 
-body .pro .pro-about-global .pro-map svg g#Component_18_1:hover text {
+body .pro .pro-about-global .pro-map svg g#Component_18_1 circle:hover + text {
   display: block;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
-body .pro .pro-about-global .pro-map svg g#Component_19_1:hover text {
+body .pro .pro-about-global .pro-map svg g#Component_19_1 circle:hover + text {
   display: block;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
-body .pro .pro-about-global .pro-map svg g#Component_20_1:hover text {
+body .pro .pro-about-global .pro-map svg g#Component_20_1 circle:hover + text {
   display: block;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+body .pro .pro-about-global .pro-map svg g#Component_18_13 circle:hover + text {
+  display: block;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 body .pro .pro-about-2 {
