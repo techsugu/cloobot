@@ -1263,6 +1263,7 @@ body {
           text {
             display: none;
             transition: ease-in 0.2s;
+            transition-delay: 10s;
           }
           defs {
             &:hover {
@@ -1275,30 +1276,56 @@ body {
           }
           g {
             &#Component_17_1 {
-              &:hover {
-                text {
-                  display: block;
+              circle {
+                &:hover {
+                  + text {
+                    display: block;
+                    transition: ease 0.2s;
+                  }
                 }
               }
             }
             &#Component_18_1 {
-              &:hover {
-                text {
-                  display: block;
+              circle {
+                &:hover {
+                  + text {
+                    display: block;
+                    transition: ease 0.2s;
+                    transition-delay: 1s;
+                  }
                 }
               }
             }
             &#Component_19_1 {
-              &:hover {
-                text {
-                  display: block;
+              circle {
+                &:hover {
+                  + text {
+                    display: block;
+                    transition: ease 0.2s;
+                    transition-delay: 1s;
+                  }
                 }
               }
             }
             &#Component_20_1 {
-              &:hover {
-                text {
-                  display: block;
+              circle {
+                &:hover {
+                  + text {
+                    display: block;
+                    transition: ease 0.2s;
+                    transition-delay: 1s;
+                  }
+                }
+              }
+            }
+            &#Component_18_13 {
+              circle {
+                &:hover {
+                  + text {
+                    display: block;
+                    transition: ease 0.2s;
+                    transition-delay: 1s;
+                  }
                 }
               }
             }
